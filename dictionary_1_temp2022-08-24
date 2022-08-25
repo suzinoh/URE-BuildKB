@@ -1,0 +1,65 @@
+Surgeon
+%definition:  A medical practitioner qualified to practise surgery. 
+is_a(surgeon, 'medical practitioner'). 
+has_property(surgeon, 'qualified to practise surgery'). 
+
+Scale
+%definition: Each of the small, thin horny or bony plates protecting the skin of fish and reptiles, typically overlapping one another. 
+is_a(scale, 'bony plates'). 
+is_a(scale, 'thin horny'). 
+has_affordance(scaleprotect, passive)
+has_property(scale, 'overlapping one another',passive). 
+has_property(scale,small,size). 
+has_property(scale,tiny ,size).
+
+Shampoo
+%definition: A liquid preparation for washing the hair. 
+is_a(shampoo,liquid). 
+has_affordance(shampooclean, active)
+
+suntrap
+%definition:  A place sheltered from the wind and positioned to receive much sunshine.
+is_a(suntrap, place).
+has_affordance(suntrapsecure, passive)
+
+supercharger
+%definition:  A device that increases the pressure of the fuelâ€“air mixture in an internal combustion engine, fitted in order to achieve greater efficiency.
+is_a(supercharger, device).
+has_a(supercharger, fuel).
+has_a(supercharger, 'combustion engine',passive).
+has_affordance(superchargerenergy source, passive)
+has_affordanceachieveactive
+
+supercomputer
+%definition: A particularly powerful mainframe computer.
+is_a(supercomputer, 'computer device').
+has_accordance(supercomputer, powerful, friction).
+has_accordance(supercomputer, mainframe, device).
+
+superficies
+%definition: A surface.
+is_a(superficies, surface).
+
+supergiant
+%definition: A very large star that is even brighter than a giant, often despite being relatively cool.
+is_a(supergiant,star).
+has_propert(supergiant, cool, temperature).
+has_property(supergiant, large, size).
+has_property(supergiant, brighter, color).
+
+superhighway
+%definition: A dual carriageway with controlled access.
+is_a(superhighway, carriageway).
+has_a(superhighway, dual).
+
+superior
+%definition:  Higher in rank, status, or quality.
+is_a(superior, senior).
+has_property(superior, rank, numbering).
+has_affordance(superior, higher, quality).
+
+superman
+%definition: A US cartoon, TV, and film character having great strength, the ability to fly, and other extraordinary powers.
+is_a(superman, cartoon).
+is_a(superman, character).
+has_a(superman, power).

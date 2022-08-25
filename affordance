@@ -1,0 +1,30 @@
+cut, active
+contain liquid, passive
+contain solid, passive
+store, passive
+scoop, active
+pound, active
+illuminate, active
+display, active
+dry, active
+hold, active
+sanitary, active
+protect, passive
+clean, active
+wipe, active
+conduct heat, passive
+energy source, passive
+whisk, active
+poke, active
+warmth, passive
+cover, passive
+secure, passive
+support, active
+entertainment, active
+sit, passive
+pull, passive
+rollable, passive
+stackable, passive
+grasp, passive
+liftable, passive
+walk, passivess
