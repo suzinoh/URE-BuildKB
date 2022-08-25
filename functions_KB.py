@@ -160,5 +160,7 @@ def perfecting_affordance(filename):
                 else:
                     print("*** affordance not specified ***")
             newline ="has_affordance"+rest+"\n"
+            print("checking if the chages apply")
             f2.write(newline)
     f2.close()
+
