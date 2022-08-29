@@ -5,8 +5,18 @@ from pathlib import Path
 """po is shortened term for possible options. gets populated by def populate with lists in file """
 po = {
     "category": [],
-    "property": [],
-    "affordance": []
+    "affordance": [],
+    "property": {
+        "state": [],
+        "shape": [],
+        "color": [],
+        "material": [],
+        "weight": [],
+        "hardness": [],
+        "hazardous": []
+    }
+        # state, shape, color, material, weight, hardness, hazardous
+
 }
 
 
@@ -18,7 +28,7 @@ def populate():
         each=each.replace("\n", "")
         if each not in po["category"]:
             po["category"].append(each)
-    print(po["category"])
+    f.close()
 
     # populating affordance
     f = open("affordance", "r")
@@ -27,6 +37,37 @@ def populate():
         each = each.replace("\n", "")
         if each not in po["affordance"]:
             po["affordance"].append(each)
+    f.close()
+
+    # populating physical property
+    f = open("physical", "r")
+    lines = f.readlines()
+    for each in lines:
+        # state, shape, color, material, weight, hardness, hazardous
+        if "state" in each:
+            each = each.replace("\n", "")
+            po["property"]["state"].append(each)
+        elif "shape" in each:
+            each = each.replace("\n", "")
+            po["property"]["shape"].append(each)
+        elif "color" in each:
+            each = each.replace("\n", "")
+            po["property"]["color"].append(each)
+        elif "material" in each:
+            each = each.replace("\n", "")
+            po["property"]["material"].append(each)
+        elif "weight" in each:
+            each = each.replace("\n", "")
+            po["property"]["weight"].append(each)
+        elif "hardness" in each:
+            each = each.replace("\n", "")
+            po["property"]["hardness"].append(each)
+        elif "hazardous" in each:
+            each = each.replace("\n", "")
+            po["property"]["hazardous"].append(each)
+    f.close()
+
+
 
 def append_choice(element, list):
     command = input("new element: " , element, "detected. ","\n","TYPE Y if adding to list:")
@@ -61,6 +102,7 @@ def split_kb(ordered, key_list):
         dictionary.write(ordered[key_list[i]])
         dictionary.write("\n")
 
+
 def check_existing_category(category):
     for item in  po["category"]:
         if category == item:
@@ -68,12 +110,14 @@ def check_existing_category(category):
     else:
         return False
 
+
 def check_existing_affordance(rest):
     for item in po["affordance"]:
         if rest == item:
             return True
     else:
         return False
+
 
 def verify_affordance(input_afford):
     """verifying the new inputted affordance if they exist in the possible option"""
@@ -84,6 +128,29 @@ def verify_affordance(input_afford):
             return item
     else:
         return -1
+
+def verify_property(possible, verifying, original_word):
+    """function for verifying from the possible list and replace
+    goal is to replace if the property is incorrect"""
+    flag = False
+    final ="has_property"
+    for item in possible:
+        if verifying == item:
+            flag = True
+    if flag == True:
+        print("no change in physical property")
+        final = final + "(" + original_word + ", " + verifying + ")"
+        return final
+    else:
+        print("attributes needs change: select from avaliable property")
+        #display options...with number and get input of number
+        for i in range(0, len(possible)-1):
+            print(i, ". ", possible[i])
+        index = input("Enter the index of property desired")
+        final = final + "(" + original_word +", " + possible[index] + ")"
+        print(final)
+        return final
+
 
 def perfecting_category(filename):
     replace = ["is_a", "(", ")", " ", ".", ",", "\n"]
@@ -125,6 +192,8 @@ def perfecting_category(filename):
                     else:
                         each_line = "is_a(%s, %s).\n" % (word, new_category)
             f2.write(each_line)
+
+
 def perfecting_affordance(filename):
     """take in dictionary_#_perf, and replace the function part to affordance and fix the errors"""
     replace = ["has_affordance", "has_Affordance", "has_accordance", "(", ")", " ", ".", ",", "\n"]
@@ -156,11 +225,55 @@ def perfecting_affordance(filename):
                 verified = verify_affordance(new_category)
                 if verified != -1:
                     new_affordance = verified
-                    rest = "(" + word + new_affordance + ")"
+                    rest = "(" + word + ", " + new_affordance + ")"
                 else:
                     print("*** affordance not specified ***")
             newline ="has_affordance"+rest+"\n"
-            print("checking if the chages apply")
-            f2.write(newline)
+            if verified != "delete, delete":
+                f2.write(newline)
     f2.close()
 
+
+def perfecting_property(filename):
+    """physical attributes are attributes that defines the characteristic of an object
+    for example, shape, color, weight etc.
+    in the kb physical attributes are labeled with has_property
+    """
+    #TODO: popualte the po with "physical", make the perfecting easier by looking labels like color, shape etc.
+    replace = ["has_property","(",")"," ",".",",","\n"]
+
+    #read the file and separate out the definition, word, and the physical property in order to perf it
+    f = open(filename, "r")
+    today = str(date.today())
+    temp = filename + "_phy_" + today
+    f2 = open(temp, "w")
+    for each_line in f:
+        if len(each_line) < 15:
+            word = each_line.replace("\n", "")
+            word = word.lower()
+            replace.append(word)
+        if "%definition" in each_line:
+            definition = each_line
+        check =each_line[:12:]
+        rest =each_line[12::]
+        #TODO: add functionality where some categories do not need an property field! - refer to the planning on Notion
+        if check!="has_property":
+            #if not has_property, continue
+            f2.write(each_line)
+        elif check =="has_property":
+            #if it is property, check property (state, shape, color, material, weight, hardness, hazardous)
+            if "state" in rest:
+                property_line = verify_property(po["property"]["state"], rest, word)
+            elif "shape" in rest:
+                property_line = verify_property(po["property"]["shape"], rest, word)
+            elif "color" in rest:
+                property_line = verify_property(po["property"]["color"], rest, word)
+            elif "material" in rest:
+                property_line = verify_property(po["property"]["material"], rest, word)
+            elif "weight" in rest:
+                property_line = verify_property(po["property"]["weight"], rest, word)
+            elif "hardness" in rest:
+                property_line = verify_property(po["property"]["hardness"], rest, word)
+            elif "hazardous" in rest:
+                property_line = verify_property(po["property"]["hazardous"], rest, word)
+            f2.write(property_line)

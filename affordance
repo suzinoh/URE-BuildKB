@@ -28,3 +28,4 @@ stackable, passive
 grasp, passive
 liftable, passive
 walk, passivess
+delete, delete
