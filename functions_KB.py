@@ -13,7 +13,8 @@ po = {
         "material": [],
         "weight": [],
         "hardness": [],
-        "hazardous": []
+        "hazardous": [],
+        "texture": []
     }
         # state, shape, color, material, weight, hardness, hazardous
 
@@ -65,6 +66,9 @@ def populate():
         elif "hazardous" in each:
             each = each.replace("\n", "")
             po["property"]["hazardous"].append(each)
+        elif "texture" in each:
+            each = each.replace("\n", "")
+            po["property"]["texture"].append(each)
     f.close()
 
 
@@ -276,4 +280,6 @@ def perfecting_property(filename):
                 property_line = verify_property(po["property"]["hardness"], rest, word)
             elif "hazardous" in rest:
                 property_line = verify_property(po["property"]["hazardous"], rest, word)
+            elif "texture" in rest:
+                property_line = verify_property(po["property"]["texture"],rest, word)
             f2.write(property_line)

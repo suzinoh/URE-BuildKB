@@ -55,3 +55,11 @@ flammable, hazardous
 toxic, hazardous
 sharp, hazardous
 explosive, hazardous
+furry, texture
+woven, texture
+bumpy, texture
+irregular, texture
+smooth, texture
+coarse, texture
+wet, texture
+sandy, texture
