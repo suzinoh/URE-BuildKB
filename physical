@@ -1,6 +1,7 @@
 liquid, state
 solid, state
 gas, state
+unlabeled, state
 sphere, shape
 cube, shape
 cylinder, shape
@@ -28,7 +29,7 @@ pink, color
 brown, color
 orange, color
 grey, color
-nonspecific, color
+unlabeled, color
 wood, material
 glass, material
 plastic, material
@@ -43,6 +44,7 @@ stone, material
 leather, material
 cotton, material
 metal, material
+unlabeled, material
 light, weight
 medium, weight
 heavy, weight
@@ -63,3 +65,4 @@ smooth, texture
 coarse, texture
 wet, texture
 sandy, texture
+unlabeled, texture

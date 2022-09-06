@@ -1,8 +1,7 @@
 # TODO: import the files and organize by alphabetical ord
 import os
-
-import functions_KB
 import functions_KB as functions_KB
+import database as db
 # from data_structure import ObjectNode
 
 directory = 'C:/Users/suzin/OneDrive/Documents/WSU/Research/KnolwedgeBase'
@@ -25,7 +24,7 @@ for i in range(len(filelist)):
                 if (character != " ") and (character != ":"):
                     replace = replace + character
             word = replace
-        elif "%definition" in each_line:
+        elif "%def" in each_line:
             definition = each_line
         elif not len(each_line)<3:
             definition = definition + each_line
@@ -39,6 +38,11 @@ for i in range(len(filelist)):
 # TODO: need to make sure each dict item's description is valid, options should be limited
 functions_KB.populate()
 #functions_KB.perfecting_category("dictionary_1")
-functions_KB.perfecting_affordance("dictionary_1")
+#functions_KB.perfecting_affordance("dictionary_2")
+#functions_KB.perfecting_property("dictionary_2")
 
+#adding to the database: commented ones are already done
+#db.add_category(functions_KB.po["category"])
+#db.add_affordance(functions_KB.po["affordance"])
+db.add_physical(functions_KB.po["property"])
 # combine them into one file instead of separate files

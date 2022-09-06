@@ -136,6 +136,7 @@ def verify_affordance(input_afford):
 def verify_property(possible, verifying, original_word):
     """function for verifying from the possible list and replace
     goal is to replace if the property is incorrect"""
+    print(verifying)
     flag = False
     final ="has_property"
     for item in possible:
@@ -148,10 +149,10 @@ def verify_property(possible, verifying, original_word):
     else:
         print("attributes needs change: select from avaliable property")
         #display options...with number and get input of number
-        for i in range(0, len(possible)-1):
+        for i in range(0, len(possible)):
             print(i, ". ", possible[i])
         index = input("Enter the index of property desired")
-        final = final + "(" + original_word +", " + possible[index] + ")"
+        final = final + "(" + original_word +", " + possible[int(index)] + ")"
         print(final)
         return final
 
@@ -179,7 +180,7 @@ def perfecting_category(filename):
                 word = each_line.replace("\n", "")
                 word = word.lower()
                 replace.append(word)
-            if "%definition" in each_line:
+            if "%def" in each_line:
                 definition = each_line
             if "is_a" in each_line:
                 category = each_line
@@ -211,7 +212,7 @@ def perfecting_affordance(filename):
             word = each_line.replace("\n","")
             word = word.lower()
             replace.append(word)
-        if "%definition" in each_line:
+        if "%def" in each_line:
             definition = each_line
         check = each_line[:12:]
         rest = each_line[12::]
@@ -256,7 +257,7 @@ def perfecting_property(filename):
             word = each_line.replace("\n", "")
             word = word.lower()
             replace.append(word)
-        if "%definition" in each_line:
+        if "%def" in each_line:
             definition = each_line
         check =each_line[:12:]
         rest =each_line[12::]
@@ -265,6 +266,7 @@ def perfecting_property(filename):
             #if not has_property, continue
             f2.write(each_line)
         elif check =="has_property":
+            print(word, "\n", definition)
             #if it is property, check property (state, shape, color, material, weight, hardness, hazardous)
             if "state" in rest:
                 property_line = verify_property(po["property"]["state"], rest, word)
