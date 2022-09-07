@@ -30,7 +30,6 @@ def add_category(po: list):
         query = f"INSERT INTO category (category_id, category_label, category_description) VALUES ('{category_id}', '{label}', '{descript}')"
         cur.execute(query)
         conn.commit()
-    conn.close()
 
 
 def split_affordance(string):
@@ -59,12 +58,25 @@ def add_affordance(po: list):
 
 def split_physical(string):
     splitting = string.split(',')
-    print(splitting)
+    category = splitting[1].replace(" ", "")
+    executeStr = "SELECT physical_category_id FROM physical_attributes WHERE physcial_category_label ='" + category + "'"
+    cur.execute(executeStr)
+    query_category = cur.fetchall()
+    category_id = query_category[0]
+    return splitting[0], category_id[0]
 
 def add_physical(po: list):
-    #TODO: split the dictionary and then insert
-   print(po)
-
+    physical_id = 0
+    for current_list in po:
+        current_dictionary = po[current_list]
+        for item in current_dictionary:
+            label, category_id = split_physical(item)
+            descript = 'empty'
+            query = f"INSERT INTO physical (physical_id, physical_label, physical_description, physical_subcategory)" \
+                    f" VALUES ({physical_id}, '{label}', '{descript}', {category_id})"
+            cur.execute(query)
+            physical_id = physical_id + 1
+            conn.commit()
 
 def add_object(po: list):
     print("adding the object. roadblock: complete the perf. of the dictionary and laod the dictionary item in the future")

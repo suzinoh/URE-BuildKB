@@ -37,12 +37,19 @@ for i in range(len(filelist)):
 
 # TODO: need to make sure each dict item's description is valid, options should be limited
 functions_KB.populate()
-#functions_KB.perfecting_category("dictionary_1")
+
+dict_list = ["dictionary_1", "dictionary_2", "dictionary_3", "dictionary_4"]
+#perfecting the category
+for item in dict_list:
+    functions_KB.perfecting_category(item)
+    #TODO: continue from dictionary2
+    print("finished the dictionary: ", item)
 #functions_KB.perfecting_affordance("dictionary_2")
 #functions_KB.perfecting_property("dictionary_2")
 
 #adding to the database: commented ones are already done
+#TODO: get object in and relations in. (needs perf)
 #db.add_category(functions_KB.po["category"])
 #db.add_affordance(functions_KB.po["affordance"])
-db.add_physical(functions_KB.po["property"])
+#db.add_physical(functions_KB.po["property"])
 # combine them into one file instead of separate files
