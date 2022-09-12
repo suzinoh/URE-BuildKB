@@ -38,7 +38,7 @@ for i in range(len(filelist)):
 # TODO: need to make sure each dict item's description is valid, options should be limited
 functions_KB.populate()
 
-dict_list = ["dictionary_1", "dictionary_2", "dictionary_3", "dictionary_4"]
+dict_list = ["dictionary_2", "dictionary_3", "dictionary_4"]
 #perfecting the category
 for item in dict_list:
     functions_KB.perfecting_category(item)
