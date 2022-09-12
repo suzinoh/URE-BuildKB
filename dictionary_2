@@ -1,7 +1,6 @@
 tomahawk
 %definition: A light axe used as a tool or weapon by North American Indians.
 is_a(tomahawk, tool).
-is_a(tomahawk, tool).
 is_a(tomahawk, device).
 
 tomb
@@ -269,7 +268,7 @@ is_a(immunosuppressant, object).
 has_a(immunosuppressant, immune).
 has_a(immunosuppressant, individual).
 has_function(immunosuppressant, suppresses, passive).
-
+stru
 Immunosuppressive
 %definition: (chiefly of drugs) partially or completely suppressing the immune response    of an individual.
 is_a(immunosuppressive, object).
@@ -448,7 +447,7 @@ has_affordance(mother,kg,weight).
 
 Model
 %definition: A three-dimensional representation of a person or thing or of a proposed structure, typically on a smaller scale than the original.
-is_a(model, title).
+is_a(model, term).
 has_a(model,dimensions).
 has_function(model,represents,passive).
 has_property(model,d,dimension).
@@ -654,7 +653,7 @@ has_property(juggernaut,overwhelming,other).
 
 juju
 %definition: A style of music popular among the Yoruba in Nigeria and characterized by the use of guitars and variable-pitch drums.
-is_a(juju,acitivity).
+is_a(juju,action).
 has_a(juju,guitars). 
 has_a(juju,'pitch drums',passive).
 has_function(juju,music,active).
@@ -662,7 +661,7 @@ has_property(juju,nigeria,other).
 
 juke
 %definition: (in sport) make a sham move to mislead an opponent. 
-is_a(juke,acitivity).
+is_a(juke,action).
 has_function(juke,move,active). 
 has_function(juke,mislead,active). 
 has_property(juke,sham,other). 
@@ -680,7 +679,7 @@ has_property(jukebox,coin,material).
 
 jumper
 %definition: A knitted garment typically with long sleeves, worn over the upper body.
-is_a(jumper,material).
+is_a(jumper,garment).
 has_function(jumper,garment,active). 
 has_property(jumper,sleeves,material). 
 has_property(jumper,'upper body',other). 
@@ -688,7 +687,7 @@ has_affordance(jumper,long,other).
 
 jumpsuit
 %definition: A garment incorporating trousers and a sleeved top in one piece, worn as a fashion item, protective garment, or uniform.
-is_a(jumpsuit,material). 
+is_a(jumpsuit,garment).
 has_function(jumpsuit,oarment,active). 
 has_function(jumpsuit,worn,active). 
 has_function(jumpsuit,uniform,active).
@@ -707,13 +706,13 @@ has_property(jersey,long,shape).
 
 jet
 %defintion: A rapid stream of liquid or gas forced out of a small opening.
-is_a(jet,liquid).
-is_a(jet,gas).
+is_a(jet, term).
+is_a(jet, property).
 has_property(jet,small,shape).
 
 jetliner
 %defintion: A large jet aircraft carrying passengers.
-is_a(jetliner,aircraft).
+is_a(jetliner, vehicle).
 has_a(jetliner,passengers).
 has_function(jetliner,carrying,active).
 has_property(jetliner,large,shape).
@@ -729,8 +728,8 @@ has_affordance(jetsam,lighten,weight).
 
 jetty
 %defintion: A landing stage or small pier at which boats can dock or be moored.
-is_a(jetty,stage).
-is_a(jetty,pier).
+is_a(jetty,place).
+is_a(jetty,structure).
 has_function(jetty,landing,active).
 has_function(jetty,dock,passive).
 has_function(jetty,moored,passive).
@@ -738,8 +737,8 @@ has_property(jetty,small,shape).
 
 jewel
 %defintion: A precious stone, typically a single crystal or piece of a hard lustrous or translucent mineral cut into shape with flat facets or smoothed and polished for use as an ornament.
-is_a(jewel,stone).
-is_a(jewel,crystal).
+is_a(jewel,garment).
+is_a(jewel,object).
 is_a(jewel,mineral).
 has_function(jewel,smoothed,active).
 has_function(jewel,polished,active).
@@ -751,31 +750,31 @@ has_affordance(jewel,hard,hardness).
 
 jewellery
 %defintion: Personal ornaments, such as necklaces, rings, or bracelets, that are typically made from or contain jewels and precious metal.
-is_a(jewellery,ornament).
+is_a(jewellery,garment).
 has_a(jewellery,jewels).
 has_a(jewellery,metal).
 
 jib
 %defintion: A triangular staysail set forward of the mast.
-is_a(jib,staysail).
+is_a(jib,trm).
 has_property(jib,triangular,shape).
 has_function(jib,set,passive).
 
 jig
 %defintion: A lively dance with leaping movements.
-is_a(jig,dance).
+is_a(jig,action).
 has_function(jig,leaping,active).
 
 jigger
 %defintion: A machine or vehicle with a part that rocks or moves to and fro, e.g. a jigsaw.
-is_a(jigger,machine).
+is_a(jigger,device.
 is_a(jigger,vehicle).
 has_function(jigger,rocks,active).
 has_function(jigger,moves,active).
 
 jigsaw
 %defintion: A puzzle consisting of a picture printed on cardboard or wood and cut into various pieces of different shapes that have to be fitted together.
-is_a(jigsaw,puzzle).
+is_a(jigsaw,object).
 has_a(jigsaw,picture).
 has_function(jigsaw,printed,active).
 has_function(jigsaw,cut,active).
@@ -785,12 +784,12 @@ has_property(jigsaw,wood,material).
 
 jimmy
 %defintion: An act of urination.
-is_a(jimmy,act).
+is_a(jimmy,action).
 has_function(jimmy,urination,active).
 
 Jungle
 %definition: An area of land overgrown with dense forest and tangled vegetation, typically in the tropics.
-is_a(jungle,area).
+is_a(jungle,place).
 has_a(jungle, 'dense forest').
 has_a(jungle, 'tangled vegetation').
 has_property(jungle, tropics,location).
@@ -812,21 +811,21 @@ has_function( jail, accused,active).
 
 Jakes
 %definition: A toilet, especially an outdoor one.
-is_a( jakes, lavatory).
+is_a( jakes, place).
 has_a(jakes,toilet).
 has_a(jakes,tap).
 has_property(jakes, urgency).
 
 Jalopy
 %definition: An old car in a dilapidated condition.
-is_a(jalopy, 'old car').
+is_a(jalopy, vehicle).
 has_a(jalopy,engin ).
 has_a(jalopy,'car parts').
 has_property(jalopy,driving).
 
 Jalousie
 %definition:  A blind or shutter made of a row of angled slats.
-is_a( jalousie, shutter).
+is_a( jalousie, structure).
 has_a(jalousie, 'adjustable horizontal slats').
 has_function( jalousie,adjustable,active).
 has_property(jailousie, 'admitting light and air').
@@ -834,8 +833,8 @@ has_affordances( jailousie, hyardness).
 
 Jamb
 %definition: A side post or surface of a doorway, window, or fireplace.
-is_a( jamb, doorway).
-is_a(jamb,window).
+is_a( jamb, term).
+is_a(jamb, structure).
 is_a(jamb,fireplace).
 has_a(jamb,surface ).
 has_function( jamb,place,passive).
@@ -843,7 +842,7 @@ has_property(jamb,'hanging out').
 
 Jambeau
 %definition: A piece of armour for the leg.
-is_a(jambeau, 'armour for the leg').
+is_a(jambeau, garment).
 has_a(jambeau,'small screws').
 has_a(jambeau,bespoke).
 has_function(jambeau, 'support for leg', active ).
@@ -852,13 +851,13 @@ has_affordances(jambeau,shape).
 
 James
 %definition: The name of seven Stuart kings of Scotland.
-is_a( james,name).
+is_a( james, proper noun).
 has_a(james,noun ).
 has_property( james,'used to call a person').
 
 Jammer
 %definition: A transmitter used for jamming signals.
-is_a( jammer,'jamming signals').
+is_a( jammer,device).
 has_a(jammer,jammer ).
 has_function( jammer,jamming).
 has_property( jammer,intrecpting,electronics).
@@ -866,7 +865,7 @@ has_affordances( jammer,other).
 
 Jammies
 %definition:  Pyjamas.
-is_a( jammies,pyjamas).
+is_a( jammies, garment).
 has_a( jammies,designs).
 has_a(jammies,'different models').
 has_function(jammiesi, waerable).
@@ -874,14 +873,14 @@ has_property(jammies,dress, 'it is for girls',passive).
 
 Japan
 %definition: A hard, dark, enamel-like varnish containing asphalt, used to give a black gloss to metal objects.
-is_a( japan,'hard used to give a black gloss to metal objects').
+is_a( japan, material).
 has_a( japan, asphalt).
 has_function(jaapan,gloss ).
 has_property( japan, polising,metals).
 
 Jar
 %definition: A wide-mouthed cylindrical container made of glass or pottery and typically having a lid, used especially for storing food.
-is_a(jar,'shaped coontainer' ).
+is_a(jar,object).
 has_a( jar,lid).
 has_function(jar,'opening closing' ).
 has_property( jar,meterials,anything).
@@ -889,16 +888,15 @@ has_affordances( jar,texture).
 
 Javelin
 %definition: A light spear thrown in a competitive sport or as a weapon.
-is_a( javelin,spears).
+is_a( javelin, tool).
 has_a(javeline,'sharp item' ).
 has_property( javeline, 'damages to people',hurts).
 has_affordances( javeline, fragility).
 
-Jaw
 
 Viewfinder
 %definition: A device on a camera showing the field of view of the lens, used in framing and focusing the picture.
-is_a(viewfinder , 'camera component').
+is_a(viewfinder , object).
 has_function(viewfinder, 'that shows the photographer the area of the subject that will be included in a photograph',passive).
 has_function(viewfinder, 'framing focusing the picture',passive).
 has_property(viewfinder, 'lens, round and rectangular shape',passive).
@@ -914,35 +912,35 @@ has_affordance(viewgraph,'very thin and light sheet of paper',passive).
 
 Vignette
 %definition: A brief evocative description, account, or episode.
-is_a(vignette, literature).
+is_a(vignette, term).
 has_function(ignette,'brief evocative description',passive).
 has_property(vignette, 'vivid representation of someone or something',passive).
 has_a(vignette,'composition of words',passive).
 
 Villa
 %definition: (especially in continental Europe) a large and luxurious country house in its own grounds.
-is_a(villa,house).
+is_a(villa,place).
 has_function(villa,'its a type of house that was originally an ancient roman empire country house',passive).
 has_function(villa,'small farming compounds',passive).
 has_property(villa,'usually made of wood,cemented bricks',passive).
 
 Vinery
 %definition: A greenhouse for grapevines. 
-is_a(vinery, building).
+is_a(vinery, place).
 has_function(vinery,'its a place for the production of wines',passive).
 has_function(vinery,'used as warehouses bottling lines, laboratories',passive).
 has_property(vinery,'storage in tanks for preservation for a long time',passive).
 
 Vineyard
 %definition: A plantation of grapevines, typically producing grapes used in winemaking.
-is_a(vineyard, plantation).
+is_a(vineyard, place).
 has_function(vineyard, 'land for growing grapes', raisins).
 has_property(vineyard, 'grapes used to make wine',passive).
 has_affordance(vineyard, 'massive land are for grapes productions',passive).
 
 Viol
 %definition: A musical instrument of the Renaissance and baroque periods, typically six-stringed, held vertically and played with a bow.
-is_a(viol, 'musical instrument').
+is_a(viol, instrument).
 has_function(viol,'used to play with a bow over a wires of strings wounded over a wooden piece',passive).
 has_property(viol,'hollow wooden box',passive).
 has_a(viol,'composed of fingerboard, fret, strings elongated over vertically on end pieces',passive).
@@ -950,7 +948,7 @@ has_affordance(bag,'usually handy light weight',passive).
 
 viola
 %definition: An instrument of the violin family, larger than the violin and tuned a fifth lower.
-is_a(viola,'Musical instrument').
+is_a(viola, instrument).
 has_function(viola, 'it has a lower and deeper sound than violin which is tuned a perfect fifth above',passive).
 has_property(viola, 'bowed, plucked & played with a bow',passive).
 has_a(viola,'strings stretched over a wooden piece',passive).
@@ -965,12 +963,12 @@ has_a(violin,'four strings,a body',passive).
 
 Virginal
 %definition: Being, relating to, or appropriate for a virgin.
-is_a(virginal,'a state',passive).
+is_a(virginal,term).
 has_function(virginal,'somethings untouched',passive).
 
 Virgo
 %definition: A large constellation (the Virgin), said to represent a maiden or goddess associated with the harvest. It contains several bright stars, the brightest of which is Spica, and a dense cluster of galaxies.
-is_a(virgo,'space star').
+is_a(virgo, object).
 has_function(virgo,'astrological sign in the zodiac',passive).
 has_function(virgo,'represent a maiden of the greek goddess of harvest',passive).
 has_a(virgo,'bright star in dense cluster of galaxies',passive).
@@ -978,26 +976,26 @@ has_property(virgo,galaxies).
 
 Virino
 %definition: A hypothetical infectious particle postulated as the cause of scrapie, BSE, and Creutzfeldtâ "Jakob disease, consisting of non-coding nucleic acid in a protective coat made from host cell proteins. 
-is_a(virino, 'particle in nervous system').
+is_a(virino, body part).
 has_function(virino, 'infectious particle which cause scrapie and other degenerative disease',passive).
 has_property(virino, 'prions responsible for disease',passive).
 has_a(virino, 'nucleic acid in protective coat of host cell protiens',passive).
 
 Virtu
 %definition: Knowledge of or expertise in the fine arts.
-is_a(virtu, study).
+is_a(virtu, term).
 has_function(virtu , 'knowledge of fine arts',passive).
 has_function(virtu, 'person specialized in a field of fine arts',passive).
 
 Viscometer
 %definition:  An instrument for measuring the viscosity of liquids. 
-is_a(viscometer,instrument).
+is_a(viscometer,device).
 has_function(viscometer, 'used for measuring viscosity of liquids',passive).
 has_property(viscometer, 'used to measure liquids',passive).
 
 Viscose
 %definition: A viscous orange-brown solution obtained by treating cellulose with sodium hydroxide and carbon disulphide, used as the basis of manufacturing rayon fibre and transparent cellulose film.
-is_a(viscose, solution).
+is_a(viscose, object).
 has_function(viscose,'used as basis for manufacturing rayon fibre',passive).
 has_function(viscose,'used as cellulose film',passive).
 has_property(viscose,'oranage brown solution obtained by treating sodium hydroxide and carbon disulphide',passive).
@@ -1011,20 +1009,22 @@ has_affordance(voile,'thin layer of garment',passive).
 
 vacuum
 %defintion: A space entirely devoid of matter.
-is_a(vacuum, space).
+is_a(vacuum, property).
+is_a(vacuum, term).
+is_a(vacuum, place).
 has_function(vacuum,'manufacturing industry',active).
 has_property(vacuum,devoid,matter).
 has_property(vacuum,protection,chemicalreactions).
 
 vagabond
 %defintion: A person who wanders from place to place without a home or job.
-is_a(vagabond,person).
+is_a(vagabond, title).
 has_function(vagabond,wandering,active).
 has_property(vagabond,travel,other).
 
 valance
 %defintion: A length of decorative drapery attached to the canopy or frame of a bed in order to screen the structure or the space beneath it.
-is_a(valance,textile).
+is_a(valance,material).
 has_a(valance,'fabric material',passive).
 has_function(valance,support,passive).
 has_function(valance,decorative,passive).
@@ -1035,7 +1035,7 @@ has_affordance(valance,'attached to bed',other).
 
 vale
 %defintion: A valley (used in place names or as a poetic term)
-is_a(vale,valley).
+is_a(vale,place).
 has_a(vale,mountains).
 has_a(vale,river).
 has_function(vale,tourism,passive).
@@ -1046,7 +1046,7 @@ has_affordance(vale,'large place',land).
 
 valenciennes
 %defintion: A type of bobbin lace.
-is_a(valenciennes,textile).
+is_a(valenciennes,material).
 has_a(valenciennes,cotton).
 has_a(valenciennes,ivory).
 has_function(valenciennes,decorative,passive).
@@ -1055,7 +1055,7 @@ has_affordance(valenciennes,flat,texture).
 
 valise
 %defintion:  A small travelling bag or suitcase.
-is_a(valise,baggage).
+is_a(valise,object).
 has_a(valise,handle).
 has_a(valise,'enclosed material',passive).
 has_function(valise,'carry luggage',active).
@@ -1089,7 +1089,7 @@ has_property(valve,'multiple shapes',shape).
 
 vambrace
 %defintion: A piece of armour for the arm, especially the forearm.
-is_a(vambrace,armour).
+is_a(vambrace,garment).
 has_a(vambrace,boiled leather).
 has_a(vambrace,iron).
 has_function(vambrace, protection,active).
@@ -1098,7 +1098,7 @@ has_affordances(vambrace,metal,texture).
 
 vamp
 %defintion: (in jazz and popular music) a short, simple introductory passage, usually repeated several times until otherwise instructed.
-is_a(vamp,usic).
+is_a(vamp,term).
 has_function(vamp,'introductory passage',active).
 has_property(vamp,singing,other).
 
@@ -1115,7 +1115,7 @@ has_affordance(van,'motor vehicle',transport).
 
 vane
 %defintion:  A broad blade attached to a rotating axis or wheel which pushes or is pushed by wind or water and forms part of a machine or device such as a windmill, propeller, or turbine.
-is_a(vane,machine).
+is_a(vane,device).
 has_a(vane,blade).
 has_function(vane,directions,active).
 has_function(vane,safety,active).
@@ -1125,7 +1125,6 @@ has_affordance(vane,moving,direction).
 Vanern
 %defintion: A lake in south-western Sweden, the largest lake in Sweden and the third largest in Europe.
 is_a(vanern,place).
-is_a(vanern,'water body').
 has_a(vanern,water).
 has_function(vanern,tourism,passive).
 has_property(vanern,sweden,largestlake).
@@ -1134,7 +1133,7 @@ has_affordance(vanern,water,area).
 
 vanity
 %defintion: Excessive pride in or admiration of one's own appearance or achievements.
-is_a(vanity,personality).
+is_a(vanity,property).
 has_a(vanity,'excessive pride',passive).
 has_property(vanity,'self-absorption',character).
 has_property(vanity,egoism,character).
@@ -1151,22 +1150,22 @@ has_affordance(vaporizer,vapor,gaseous).
 
 variable
 %defintion: Not consistent or having a fixed pattern; liable to change.
-is_a(variable,pattern).
-is_a(variable,quantity).
+is_a(variable,term).
+is_a(variable,property.
 has_function(variable,math,active).
 has_property(variable,quantity,measured).
 has_property(variable,quantity,counted).
 
 variation
 %defintion: A change or slight difference in condition, amount, or level, typically within certain limits.
-is_a(variation,measurement).
+is_a(variation,term).
 has_a(variation,values).
 has_function(variation,measuring,active).
 has_property(variation,probability,other).
 
 variometer
 %defintion: A device for indicating an aircraft's rate of climb or descent.
-is_a(variometer,instrument).
+is_a(variometer,device).
 has_a(variometer,needle).
 has_function(variometer,'altitude calculator',active).
 has_function(variometer,'speed calculator',active).
@@ -1175,56 +1174,52 @@ has_property(variometer,round,shape).
 
 Van
 %definition: A medium-sized motor vehicle, typically without side windows in the rear part, for transporting goods.
-is_a(van, 'motor vehicle').
+is_a(van, vehicle).
 has_a(van, 'side windows',passive).
 has_function(van, transporting, goods).
 
 Vegetable
 %definition: A plant or part of a plant used as food, such as a cabbage, potato, turnip, or bean.
-is_a(vegetable, plant).
+is_a(vegetable, food).
 has_function(vegetable, 'used as', food).
 
 Venogram
 %definition: An image produced by venography.
-is_a(venogram, 'image produced by venography').
+is_a(venogram, object).
 
 Vent
 %definition: An opening that allows air, gas, or liquid to pass out of or into a confined space.
-is_a(vent, 'opening that allows air').
-is_a(vent, 'opening that allows gas').
-is_a(vent, 'opening that allows liquid').
+is_a(vent, structure)
+is_a(vent, term)
 has_function(vent, 'liquid to pass out of or into a confined space',active).
 
 Ventilation
 %definition: The provision of fresh air to a room, building, etc.
-is_a(ventilation, 'provision of fresh air to a room').
-is_a(ventilation, 'provision of fresh air to a building').
+is_a(ventilation, action)
 
 Ventilator
 %definition: An appliance or aperture for ventilating a room or other space.
-is_a(ventilator, 'appliance for ventilating a room').
-is_a(ventilator, 'aperture for ventilating a room or other space').
+is_a(ventilator, device)
 
 venturi
 %definition:  A short piece of narrow tube between wider sections for measuring flow rate or exerting suction.
-is_a(venture, 'short piece of narrow tube between wider sections').
+is_a(venture, tool)
 has_function(venture, 'measuring flow rate or exerting suction,'active).
 
 Venus
-%definition: he second planet from the sun in the solar system, the brightest celestial object after the sun and moon and frequently appearing in the twilight sky as the evening or morning star.
-is_a(venus,'second plannet in solar system').
+%definition: the second planet from the sun in the solar system, the brightest celestial object after the sun and moon and frequently appearing in the twilight sky as the evening or morning star.
+is_a(venus,place).
 has_property(venus,brighest,other).
 has_function(venus,'frequently appearing in the twilight sky ',active).
 
 veranda
 %definition: A roofed platform along the outside of a house, level with the ground floor.
-is_a(veranda,'roofed platform').
+is_a(veranda, structure).
 is_a(veranda,'level with the ground floor').
 
 verdigris
 %definition: A bright bluish-green encrustation or patina formed on copper or brass by atmospheric oxidation, consisting of basic copper carbonate.
-is_a(verdigris,encrustation).
-is_a(verdifris,patina ).
+is_a(verdigris,device)
 has_properties(verdigris,bluish-green,color).
 has_a(verdigris,'atmospheric oxidation').
 has_property(verdigris,copper,material).
@@ -1233,12 +1228,12 @@ has_property(verdigris,'copper carbonate',material).
 
 verge
 %definition: An edge or border.
-is_a(verge,edge).
-is_a(verge,border).
+is_a(verge,property).
+is_a(verge,term).
 
 vermicide
 %definition: A substance that is poisonous to worms.
-is_a(vermicide,'substance that is poisonous to worms').
+is_a(vermicide,object).
 
 vermiculation
 %definition: A marking made by, or resembling the track of, a worm.
@@ -1247,11 +1242,11 @@ has_function(vermiculation,'resembling the track of a worm',active).
 
 vermifuge
 %definition: An anthelmintic medicine.
-is_a(vermifuge,'anthelmintic medicine').
+is_a(vermifuge, object).
 
 vernier
 %definition: A small movable graduated scale for obtaining fractional parts of subdivisions on a fixed main scale of a barometer, sextant, or other measuring instrument.
-is_a(vernier,'movable graduated scale').
+is_a(vernier, device).
 has_function(vernier,'obtaining fractional parts of barometer',active).
 has_function(vernier,'obtaining fractional parts of sextant',active).
 has_function(vernier,'obtaining fractional parts of measuring instruments',active).
@@ -1264,39 +1259,38 @@ has_function(versaillies,'built for louis near the town of versailles',active).
 
 versant
 %definition: A region of land sloping in one general direction.
-is_a(versant,'region of land').
+is_a(versant, term).
 has_function(versant,sloping,active).
 has_property(versant,'general direction',other).
 
 verso
 %definition: A left-hand page of an open book, or the back of a loose document.
-is_a(verso,'left-hand page of an open book').
-is_a(verso,'the back of a loose document').
+is_a(verso,term).
 
 vertical
 %definition: At right angles to a horizontal plane; in a direction, or having an alignment, such that the top is directly above the bottom.
-is_a(vertical,'right angles to a horizontal plane').
+is_a(vertical,property).
+ia_a(vertical, term).
 has_function(vertical,'top directly above the bottom').
 
 vesper
 %definition: Evening prayer; vespers.
-is_a(vesper,'evening prayer').
-is_a(vesper,vespers).
+is_a(vesper,action).
+is_a(vesper,term).
 
 vessel
 %definition: A ship or large boat.
-is_a(vessel,ship).
-is_a(vessel,'large boat').
+is_a(vessel,vehicle).
 
 vest
 %definition: An undergarment worn on the upper part of the body, typically having no sleeves.
-is_a(vest,untdergarment).
+is_a(vest,garment).
 has_function(vest,'worn on upper part of body',active).
 has_properties(vest,'no sleeves',long).
 
 Piano
 %definition: A large keyboard musical instrument with a wooden case enclosing a soundboard and metal strings, which are struck by hammers when the keys are depressed. The strings' vibration is stopped by dampers when the keys are released and can be regulated for length and volume by two or three pedals.
-is_a(piano, 'musical instrument').
+is_a(piano, instrument).
 has_a(piano, strings).
 has_a(piano, keyboard).
 has_a(piano, soundboard).
@@ -1310,44 +1304,37 @@ has_affordance(piano, large, size).
 
 Physician
 %definition: A person qualified to practice medicine, especially one who specializes in diagnosis and medical treatment as distinct from surgery. 
-is_a(physician, person).
+is_a(physician, title).
 has_a(physician,'qualified to practice medicine',passive).
 has_a(physician,'especially one who specializes in diagnosis',passive).
 has_a(physician,'medical treatment as distinct from surgery',passive). 
 
 Photographer
 %definition: A person who takes photographs, especially as a job. 
-is_a(photographer, person).
+is_a(photographer, title).
 has_a(photographer, 'takes photographs',passive).
 has_a(photographer, 'especially as a job',passive). 
 
 Professor
 %definition: A university academic of the highest rank; the holder of a university chair. 
-is_a(professor,' university academic').
-is_a(professor,' holder of university chair',passive).
+is_a(professor, title).
 has_a(professor,'highest rank',passive).
 
 painter
 %definition: An artist who paints pictures. 
-is_a(painter, artist).
+is_a(painter, title).
 has_function(painter,'painting pictures',active). 
 
 Park
 %definition: A large public garden or area of land used for recreation. 
-is_a(park,'large public garden').
+is_a(park, place).
 has_a(park,' area of land',passive).
 has_affordance(park,'large,area',passive).
 has_function(park,'recreation',active). 
 
 Plant
 %definition: A living organism of the kind exemplified by trees, shrubs, herbs, grasses, ferns, and mosses, typically growing in a permanent site, absorbing water and inorganic substances through its roots, and synthesizing nutrients in its leaves by photosynthesis using the green pigment chlorophyll. 
-is_a(plant, 'living organism').
-is_a(plant, trees).
-is_a(plant, shrubs).
-is_a(plant, herbs).
-is_a(plant, grasses). 
-is_a(plant, ferns). 
-is_a(plant, mosses).
+is_a(plant, term).
 has_property(plant, 'absorbing water',passive).
 has_property(plant, 'inorganic substances',passive).
 has_property(plant, 'psynthesizing nutrients',passive).
@@ -1357,7 +1344,7 @@ has_property(plant, 'pgreen pigment chlorophyll ', material).
 
 Panther
 %definition: A leopard, especially a black one.
-is_a(panther, leopard).
+is_a(panther, animal).
 has_property(panther, black, color).
 
 Pad
@@ -1371,7 +1358,7 @@ has_affordance(pad, thick, hardness).
 
 Pencil
 %defintion: An instrument for writing or drawing, consisting of a thin stick of graphite or a similar substance enclosed in a long thin piece of wood or fixed in a cylindrical case.
-is_a(pencil,instrument).
+is_a(pencil, tool).
 has_function(pencil,writing,active).
 has_function(pencil,drawing,active).
 has_property(pencil,enclosed,other).
@@ -1382,7 +1369,7 @@ has_affordance(pencil,thin,fragility).
 
 Pipe
 %definition:  A tube used to convey water, gas, oil, or other fluid substances.
-is_a(pipe, tube).
+is_a(pipe, material).
 has_function(pipe, convey, active).
 
 Police
@@ -1395,7 +1382,7 @@ has_function(police, maintenance, active).
 
 Pen
 %definition: An instrument for writing or drawing with ink, typically consisting of a metal nib or ball, or a nylon tip, fitted into a metal or plastic holder.
-is_a(pen, instrument).
+is_a(pen, tool).
 has_a(pen, ink).
 has_a(pen, 'metal nib').
 has_a(pen, ball).
@@ -1408,15 +1395,14 @@ has_property(pen, plastic, material).
 
 Pharmacy
 %definition: A shop or hospital dispensary where medicinal drugs are prepared or sold.
-is_a(pharmacy, shop).
-is_a(pharmacy, 'hospital dispensary').
+is_a(pharmacy, place).
 has_a(pharmacy, 'medical drugs').
 has_function(pharmacy, prepare, active).
 has_function(pharmacy, sell, active).
 
 Parrot
 %definition:   A bird, often vividly coloured, with a short downcurved hooked bill, grasping feet, and a raucous voice, found especially in the tropics and feeding on fruits and seeds. Many are popular as cage birds, and some are able to mimic the human voice.
-is_a(parrot, bird).
+is_a(parrot, animal).
 has_function(parrot, 'cage bird', passive).
 has_function(parrot, mimic, passive).
 has_property(parrot, 'downcurved hooked bill', beak).
@@ -1426,13 +1412,13 @@ has_property(parrot, raucous, voice).
 
 Plane
 %definition: A flat surface on which a straight line joining any two points on it would wholly lie.
-is_a(plane, 'flat surface').
+is_a(plane, property).
 has_a(plane, 'straight line').
 has_property(plane, straight, shape).
 
 Pigeon
 %definition: A stout seed- or fruit-eating bird with a small head, short legs, and a cooing voice, typically having grey and white plumage.
-is_a(pigeon, bird).
+is_a(pigeon, animal).
 has_a(pigeon, head).
 has_a(pigeon, legs).
 has_a(pigeon, plumage).
@@ -1445,11 +1431,11 @@ has_afordance(pigeon, stout, weight).
 
 Phone
 %definition:  A telephone.
-is_a(phone, telephone).
+is_a(phone, device).
 
 Peacock
 %definition:  A male peafowl, which has very long tail feathers that have eye-like markings and can be erected and fanned out in display.
-is_a(peacock, 'male peafowl').
+is_a(peacock, animal).
 has_a(peacock, feathers).
 has_property(peacock, 'eye-like markings', shape).
 has_property(peacock, erected, shape).
@@ -1458,7 +1444,7 @@ has_affordance(peacock, 'long tail', length).
 
 Pig
 %definition:  An omnivorous domesticated hoofed mammal with sparse bristly hair and a flat snout for rooting in the soil, kept for its meat.
-is_a(pig, mammal).
+is_a(pig, animal).
 has_a(pig, hair).
 has_a(pig, snout).
 has_function(pig, domesticated, passive).
@@ -1469,20 +1455,20 @@ has_affordance(pig, bristly, texture).
 
 Pouch
 %definition:  A small flexible bag, typically carried in a pocket or attached to a belt.
-is_a(pouch, bag).
+is_a(pouch, object).
 has_a(pouch, belt).
 has_affordance(pouch, small, size).
 has_affordance(pouch, flexible, fragility).
 
 Pagoda
 %definition: (in India and East Asia) a Hindu or Buddhist temple, typically in the form of a many-tiered tower.
-%is_a(pagoda, temple).
+is_a(pagoda, place).
 has_a(pagoda, tower).
 has_property(pagoda, many-tiered, shape).
 
 Pyramid
 %definition: A monumental structure with a square or triangular base and sloping sides that meet in a point at the top, especially one built of stone as a royal tomb in ancient Egypt.
-is_a(pyramid, monument).
+is_a(pyramid, place).
 has_a(pyramid, base).
 has_a(pyramid, 'sloping sides').
 has_a(pyramid, tomb).
@@ -1492,7 +1478,7 @@ has_property(pyramid, stone, material).
 
 Purse
 %definition: A small pouch of leather or plastic used for carrying money, typically by a woman.
-is_a(purse, pouch).
+is_a(purse, object).
 has_a(purse, money).
 has_function(purse, carry, active).
 has_property(purse, leather, material).
@@ -1501,7 +1487,7 @@ has_affordance(purse, small, size).
 
 Pancake
 %definition: A thin, flat cake of batter, fried on both sides in a pan and typically rolled up with a sweet or savoury filling.
-is_a(pancake, cake).
+is_a(pancake, food).
 has_a(pancake, batter).
 has_a(pancake, filling).
 has_property(pancake, sweet, taste).
@@ -1510,7 +1496,7 @@ has_affordance(pancake, thin, texture).
 
 Popcorn
 %definition: Maize of a variety with hard kernels that swell up and burst open when heated.
-is_a(popcorn, maze).
+is_a(popcorn, food).
 has_a(popcorn, kernels).
 has_property(popcorn, 'swell up', shape).
 has_property(popcorn, 'burst open', shape).

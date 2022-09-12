@@ -176,15 +176,16 @@ def perfecting_category(filename):
         lines = f.readlines()
         word = ""
         for each_line in lines:
-            if "is_a" not in each_line and "has_" not in each_line and "has_function" not in each_line and "has_affordance" not in each_line and "%definition" not in each_line and "%has_Affordance" not in each_line:
+            if "is_a" not in each_line and "has_" not in each_line and "has_function" not in each_line and "has_affordance" not in each_line and "%definition:" not in each_line and "has_Affordance" not in each_line and "." not in each_line:
                 word = each_line.replace("\n", "")
                 word = word.lower()
-                replace.append(word)
+                print(word)
             if "%def" in each_line:
                 definition = each_line
             if "is_a" in each_line:
                 category = each_line
                 for item in replace:
+                    category = category.replace(word, '')
                     category = category.replace(item, '')
                 if check_existing_category(category) is False:
                     print("---> incorrect category please reconfigure category to replace ", category, "for ", word)
