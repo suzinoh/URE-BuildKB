@@ -286,3 +286,8 @@ def perfecting_property(filename):
             elif "texture" in rest:
                 property_line = verify_property(po["property"]["texture"],rest, word)
             f2.write(property_line)
+
+
+
+
+            print("Fuck you 2 :>")

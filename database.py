@@ -65,6 +65,7 @@ def split_physical(string):
     category_id = query_category[0]
     return splitting[0], category_id[0]
 
+
 def add_physical(po: list):
     physical_id = 0
     for current_list in po:
@@ -78,5 +79,68 @@ def add_physical(po: list):
             physical_id = physical_id + 1
             conn.commit()
 
-def add_object(po: list):
-    print("adding the object. roadblock: complete the perf. of the dictionary and laod the dictionary item in the future")
+
+def get_object_category(filename):
+    f = open(filename, "r")
+    lines = f.readlines()
+    pairs = []
+    words = []
+    iss = []
+    defs = []
+    replacing = ["(", ")", " ", "is_a", ".", "\n",","]
+    word, definition, is_a = "", "",""
+    for each_line in lines:
+        if "is_a" not in each_line and "has_" not in each_line and "has_function" not in each_line and "has_affordance" not in each_line and "%definition:" not in each_line and "has_Affordance" not in each_line and "." not in each_line and len(each_line)!=1:
+            # testing: print(each_line)
+            word = each_line
+            word = word.replace("\n", "")
+            word = word.lower()
+            words.append(word)
+        if "%def" in each_line:
+            definition = each_line
+            definition = definition.replace("%definition: ", "")
+            definition = definition.replace("\n", "")
+            # testing: print(definition, "\n")
+            defs.append(definition)
+        if "is_a" in each_line:
+            # print(each_line)
+            is_a = each_line
+            for item in replacing:
+                is_a = is_a.replace(item, "")
+                is_a = is_a.replace(word, "")
+            # testing: print(word, is_a)
+            iss.append(is_a)
+            tup = (word, is_a, definition)
+            pairs.append(tup)
+    print(len(words))
+    print(len(iss))
+    print(len(defs))
+    print(len(pairs))
+    return pairs
+
+def get_category_id(category):
+    query = f"SELECT category_id FROM category WHERE category_label = '{category}'"
+    cur.execute(query)
+    categoryid = cur.fetchall()
+    return categoryid[0][0]
+
+
+def add_object():
+    dictionaries = ["dictionary_1_perf_2022-09-07", "dictionary_2_perf_2022-09-12", "dictionary_3_perf_2022-09-12",
+                    "dictionary_4_perf_2022-09-13"]
+    #TODO: dict1, dict2 done
+    dictionary = dictionaries[3]
+    pairs = get_object_category(dictionary)
+    id = 633
+    for item in pairs:
+        cat_id = get_category_id(item[1])
+        if "'" not in item[2]:
+            description = item[2]
+        else:
+            description = "empty : error handling"
+        query = f"INSERT INTO object (object_id, object_label, object_description, object_category)" \
+                 f" VALUES ('{id}', '{item[0]}', '{description}', '{cat_id}')"
+        cur.execute(query)
+        id = id+1
+        print(cat_id, item[0])
+        conn.commit()

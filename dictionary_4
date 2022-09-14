@@ -282,7 +282,7 @@ doorpost
 is_a(doorpost, part).
 has_property(doorpost, upright, shape).
 
-doorstep
+doorstop
 doorstop: A fixed or heavy object that keeps a door open or stops it from banging against a wall.
 is_a(doorstop, object).
 has_affordance(doorstop, fixed, stable).
@@ -305,7 +305,7 @@ dope
 is_a(dope, drug).   
 has_function(dope, recreational, passive).
 
-doradon
+dorado
 %definition: edible marine fish of warm seas, with silver and bright blue or green coloration when alive.
 is_a(dorado, fish).
 has_a(dorado, marine). 
