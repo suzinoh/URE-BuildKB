@@ -118,6 +118,7 @@ def get_object_category(filename):
     print(len(pairs))
     return pairs
 
+
 def get_category_id(category):
     query = f"SELECT category_id FROM category WHERE category_label = '{category}'"
     cur.execute(query)
@@ -144,3 +145,18 @@ def add_object():
         id = id+1
         print(cat_id, item[0])
         conn.commit()
+
+
+def new_affordance_insert(new_afford_file):
+    read = open(new_afford_file, "r")
+    word, afford = "", ""
+    # TODO: get the max value from the affordance id column, increment the index, insert the affordance
+    for each_line in read:
+        if "has_" not in each_line:
+            word = each_line
+            word = word.replace("\n","")
+        else:
+            afford = each_line
+        print(word, afford)
+
+            # do the splitting

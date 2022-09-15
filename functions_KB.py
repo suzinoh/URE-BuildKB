@@ -133,6 +133,7 @@ def verify_affordance(input_afford):
     else:
         return -1
 
+
 def verify_property(possible, verifying, original_word):
     """function for verifying from the possible list and replace
     goal is to replace if the property is incorrect"""
@@ -203,6 +204,9 @@ def perfecting_category(filename):
 def perfecting_affordance(filename):
     """take in dictionary_#_perf, and replace the function part to affordance and fix the errors"""
     replace = ["has_affordance", "has_Affordance", "has_accordance", "(", ")", " ", ".", ",", "\n"]
+    new_filename = ("New_Affordances") + str(date.today())
+    #fnew == prothas new affordances
+    fnew = open(new_filename, "w")
     f = open(filename, "r")
     today = str(date.today())
     temp = filename+"_temp"+today
@@ -223,21 +227,33 @@ def perfecting_affordance(filename):
             for item in replace:
                 rest = rest.replace(item, '')
             if check_existing_affordance(rest) is False:
-                #TODO: must support the case where having affordance does not make sense... ex) superman. maybe with category
-                print("---> incorrect category please reconfigure Affordance to replace ", rest, " for ", word)
+                newline = ""
+                # TODO: must support the case where having affordance does not make sense... ex) superman.
+                print("---> incorrect AFFORDANCE please reconfigure Affordance to replace ", rest, " for ", word)
                 print(definition)
                 print(po["affordance"])
-                new_category = input("---> enter new Affordance: ")
-                verified = verify_affordance(new_category)
-                if verified != -1:
-                    new_affordance = verified
-                    rest = "(" + word + ", " + new_affordance + ")"
+                # TODO: new affordance adding feature supported?
+                new_category = input("---> enter new Affordance. if new affordance, enter 'add' : ")
+                if new_category == "add":
+                    print("do smth to handle the new affordance being added")
+                    #keeping the original
+                    newline = each_line
+                    f2.write(newline)
+                    fnew.write(word)
+                    fnew.write("\n")
+                    fnew.write(newline)
                 else:
-                    print("*** affordance not specified ***")
-            newline ="has_affordance"+rest+"\n"
-            if verified != "delete, delete":
-                f2.write(newline)
+                    verified = verify_affordance(new_category)
+                    if verified != -1:
+                        new_affordance = verified
+                        rest = "(" + word + ", " + new_affordance + ")"
+                        newline = "has_affordance" + rest + "\n"
+                    else:
+                        print("*** affordance not specified ***")
+                    if verified != "delete, delete":
+                        f2.write(newline)
     f2.close()
+    fnew.close()
 
 
 def perfecting_property(filename):
