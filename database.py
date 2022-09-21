@@ -112,10 +112,7 @@ def get_object_category(filename):
             iss.append(is_a)
             tup = (word, is_a, definition)
             pairs.append(tup)
-    print(len(words))
-    print(len(iss))
-    print(len(defs))
-    print(len(pairs))
+
     return pairs
 
 
@@ -147,9 +144,33 @@ def add_object():
         conn.commit()
 
 
+def get_new_index(key):
+    #TODO: get the function working with other tables too
+    if key == "affordance":
+        query = f"SELECT MAX(affordance_id) FROM affordance"
+        cur.execute(query)
+        index = cur.fetchall()
+        return(index[0][0])
+    elif key == "physical":
+        query = f"SELECT MAX(physical_id) FROM physical"
+        cur.execute(query)
+        index = cur.fetchall()
+        return(index[0][0])
+    elif key =="relation":
+        query = f"SELECT MAX(relation_id) FROM relation"
+        cur.execute(query)
+        index = cur.fetchall()
+        return(index[0][0])
+
 def new_affordance_insert(new_afford_file):
+    """ def new_affordance_insert is a function that take in the file, "New_Affordance_xx",
+    which contains the lists of new added affordances that were detected and deisred to be inserted
+    to the database, and insert the rows to the database
+    """
+    replacing = ["has_affordance", "has_function", "(", ")", "."]
     read = open(new_afford_file, "r")
     word, afford = "", ""
+    tuples=[]
     # TODO: get the max value from the affordance id column, increment the index, insert the affordance
     for each_line in read:
         if "has_" not in each_line:
@@ -157,6 +178,104 @@ def new_affordance_insert(new_afford_file):
             word = word.replace("\n","")
         else:
             afford = each_line
-        print(word, afford)
+            afford = afford.lower()
+        if word and afford:
+            #word and affordance detected, get label
+            afford = afford.replace(word, "")
+            for item in replacing:
+                afford = afford.replace(item, "")
+            afford = afford.replace(",", "", 1)
+            segmented = afford.split(",")
+            print(segmented)
+            #removing the space from the first element of affordance
+            label = segmented[0]
+            if label[0] == " ":
+                label = label.replace(" ", "", 1)
+            is_active = segmented[1].replace("\n", "")
+            is_active = is_active.replace(" ","")
+            label = label.replace("'","")
+            newtup = (label, is_active)
+            tuples.append(newtup)
+            word, afford = "",""
+    f = open("affordance", "a")
+    f.write("\n")
+    index = get_new_index("affordance")+1
+    descript = "empty"
+    for items in tuples:
+        if items[1] == "active":
+            is_active = True
+        else:
+            is_active = False
+        query = f"INSERT INTO affordance (affordance_id, affordance_label, affordance_description, is_active)" \
+                f" VALUES ('{index}', '{items[0]}', '{descript}', {is_active})"
+        print(query)
+        cur.execute(query)
+        index = index + 1
+        conn.commit()
+        newline = items[0] + ", " + items[1] + "\n"
+        f.write(newline)
+    #appedning the .txt
+    f = open("affordance", "a")
 
-            # do the splitting
+
+def query_object(word):
+    """queries the object from the object table"""
+    query = f"SELECT object_id FROM object WHERE object_label = '{word}'"
+    cur.execute(query)
+    object_id = cur.fetchall()
+    # object_id = object_id[0][0]
+    print(object_id)
+    return object_id
+
+def query_affordance(affordance):
+    query = f"SELECT affordance_id FROM affordance WHERE affordance_label = '{affordance}'"
+    cur.execute(query)
+    affordance_id = cur.fetchall()
+    affordance_id = affordance_id[0][0]
+    return affordance_id
+
+def query_object_affordance(word, affordance):
+    success = True
+
+    # except:
+    #     print("error at affordance")
+
+
+def inserting_linked_affordance():
+    replace = ["has_affordance", "has_", "has_function", ".", "'", "\n"]
+    #steps: read each line by line get the object number and affordance number
+    f = open("dictionary_1_perf_2022-09-07_temp2022-09-15", "r")
+    lines = f.readlines()
+    word, affordance = "", ""
+    for each_line in lines:
+        if len(each_line) < 15:
+            word = each_line.replace("\n", "")
+            word = each_line.replace(".", "")
+            word = word.lower()
+        elif "has_" in each_line:
+            check = each_line[:12:].lower()
+            affordance = each_line[12::].replace("\n","")
+            if "function" in check or "afford" in check:
+                if "active" in affordance:
+                    affordance = affordance + " 1"
+                    splitting = affordance.split(",")
+                    affordance = splitting[1]
+                if "passive" in affordance:
+                    affordance = affordance + " 0"
+                    splitting = affordance.split(",")
+                    affordance = splitting[1]
+                word = word.replace("\n","")
+                affordance = affordance.replace("'","")
+                affordance = affordance.replace(" ","",1)
+                if "(" not in affordance:
+                    print(word)
+                    query_object(word)
+                    # print(affordance)
+                    # query_affordance(affordance)
+                    # query_object_affordance(word, affordance)
+
+
+
+
+def new_physical_insert(new_physicals):
+    replacing = ["has_", "has_function", "(", ")", "."]

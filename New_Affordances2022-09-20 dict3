@@ -1,0 +1,92 @@
+paint
+has_function(paint,coating,passive).
+astronaut
+has_function(astronaut, discovering, active).
+anodyne
+has_function(anodyne, 'not likely to cause offence',passive).
+abdomen
+has_function(abdomen, 'digestive organ',passive).
+abdomen
+has_function(abdomen, 'reproductive organs',passive).
+airlock
+has_function(airlock, 'stoppage of the flow',passive).
+apple
+has_function(apple, 'making cider', active).
+airport
+has_function(airport, landing, passive).
+asteriod
+has_function(asteroid, 'orbit stars', passive).
+avalanche
+has_function(avalanche, disaster, passive).
+blizzard
+has_function(blizzard, 'high wind', passive).
+bullet
+has_function(bullet, piercing, passive).
+glen
+has_function(glen,valley,passive).
+glider
+has_function(glider,fly,active).
+globule
+has_function(globule,drop,active).
+glyptography
+has_function(glyptography,study,active).
+go
+has_function(go,travel,active).
+goad
+has_function(goad,stimulate,active).
+goalmouth
+has_function(goalmouth,area,passive).
+grenade
+has_function(grenade,bomb,active).
+gillie
+has_function(gillie, hunting, active).
+gimmick
+has_function(gimmick, 'attract attention', active).
+glass
+has_function(glass, 'to make other articles', active).
+glasses
+has_function(glasses, 'to correct or assist defective eyesight',active).
+glassworks
+has_function(factory, 'glass and glass articles are made', passive).
+gap
+has_function(gap,space_difference,passive).
+hangar
+has_function(hangaer, extensive, floor)..
+brain
+has_function(brain,	'coordinating center of sensation',	active).
+brain
+has_function(brian,	'coordinating center of intellectual',	active).
+brain
+has_function(brain,	'coordinating center of nervous activity',	active).
+bulb
+has_function(bulb,underground-storage-organ,passive).
+bat
+has_function(bat,base-ball,active).
+bat
+has_function(bat,table-tennis,active).
+blender
+has_function(blender,'preparation',active).
+blender
+has_function(blender,chopping,active).
+blender
+has_function(blender,pureeing,active).
+balm
+has_function(balm, soothe skin, active).
+road
+has_function(road, 'vehicles can use',active).
+ruler
+has_function(ruler, 'exercising dominion', active).
+river
+has_function(river, 'flowing to lake', active).
+funnel
+has_function(funnel,'guiding powder',active).
+fan
+has_function(fan, rotate, active).
+freezer
+has_function(freezer, 'food preserve', passive).
+oil
+has_function(oil,lubricant,active).
+oven
+has_function(oven,cooking,active).
+earthworm
+has_function(earthworm, aerating,active).

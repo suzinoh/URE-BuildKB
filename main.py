@@ -40,9 +40,10 @@ for i in range(len(filelist)):
 
 # TODO: need to make sure each dict item's description is valid, options should be limited
 functions_KB.populate()
-
-dict_list = ["dictionary_1_perf_2022-09-07", "dictionary_2_perf_2022-09-12", "dictionary_3_perf_2022-09-12",
-                "dictionary_4_perf_2022-09-13"]
+#"dictionary_1_perf_2022-09-07"
+#"dictionary_2_perf_2022-09-12"
+#"dictionary_3_perf_2022-09-12"
+dict_list = ["dictionary_4_perf_2022-09-13"]
 # perfecting the category, last perfected 09092022
 # for item in dict_list:
 #     functions_KB.perfecting_category(item)
@@ -53,9 +54,13 @@ dict_list = ["dictionary_1_perf_2022-09-07", "dictionary_2_perf_2022-09-12", "di
 # perfecting the affordance,
 # dict list updated to the category_perfected dictionaries
 #       "dictionary_1_perf_2022-09-07", "dictionary_2_perf_2022-09-12", "dictionary_3_perf_2022-09-12", "dictionary_4_perf_2022-09-13"
-for item in dict_list:
-    functions_KB.perfecting_affordance(item)
-    print("finished the dictionary: ", item)
+
+# database.new_affordance_insert("New_Affordances2022-09-15")
+
+# for item in dict_list:
+#     functions_KB.perfecting_affordance(item)
+
+database.inserting_linked_affordance()
 
 
 # adding to the database: commented ones are already done

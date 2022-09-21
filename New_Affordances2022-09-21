@@ -1,0 +1,28 @@
+yield
+has_function(yield,provide,active).
+drink
+has_function(drink, swallow, active).
+drey
+has_function(drey,nest,passive).
+dentist
+has_function(dentist, heal, active).
+detective
+has_function(detective, 'to investigate crimes', active).
+detective
+has_function(detective,  'to solve crimes', active).
+dagger
+has_function(dagger, weapon,active).
+xerox
+has_function(xerox,scanning,active).
+xerox
+has_function(xerox,copying,active).
+leg
+has_function(leg, stand, passive).
+library
+has_function(library, 'borrowing by public', active).
+library
+has_function(library, 'borrowing by member of institution', active).
+lung
+has_function(lung,'air is drawn',active). 
+luggage
+has_function(luggage,'pack belonging',active).

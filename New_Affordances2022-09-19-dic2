@@ -1,0 +1,148 @@
+tomograph
+has_function(tomograph, 'detect and record the passage of electromagnetic waves, electrons', active).
+trapeze
+has_function(trapeze, 'free to swing',active).
+trapezium
+has_function(trapezium,calculation,active).
+trash
+has_function(trash, refuse,active).
+treadmill
+has_function(treadmill,drive,active).
+treasury
+has_function(treasury,collection,other).
+image
+has_function(image, representation, passive).
+immunogen
+has_function(immunogen, eliciting, active).
+immunosuppressant
+has_function(immunosuppressant, suppresses, passive).
+imunosuppressive
+has_function(imunosuppressive, suppressing, active).
+improvisation
+has_function(improve, growth, passive).
+incendiary
+has_function(incendiary,'gives smoke',active).
+incinerator
+has_function(incinerator,burner,active).
+incinerator
+has_function(incinerator,'turns to ashes',active).
+incinerator
+has_function(incinerator,'melts things/chemicals',active).
+inclinometer
+has_function(inclinometer,measurement,passive).
+inclusion
+has_function(inclusion,'adding something',active).
+inclusion
+has_function(inclusion,'introducing new ones',active).
+needle
+has_function(needle, sewing, active).
+mother
+has_function(mother,birth,active).
+market
+has_function(market,sell,active).
+monkey
+has_function(monkey,eat,active).
+mouth
+has_function(mouth,eat,active).
+jointer
+has_function(jointer,fixing,active).
+jordan
+has_function(jordan,country,passive).
+joystick
+has_function(joystick,control,active).
+juju
+has_function(juju,music,active).
+juke
+has_function(juke,mislead,active).
+jukebox
+has_function(jukebox,music,active).
+jumpsuit
+has_function(jumpsuit,worn,active).
+jumpsuit
+has_function(jumpsuit,uniform,active).
+jersey
+has_function(jersey,worn,passive).
+jetsam
+has_function(jetsam,washed,active).
+jetty
+has_function(jetty,dock,passive).
+jimmy
+has_function(jimmy,urination,active).
+jailhouse
+has_function( jail, accused,active).
+jamb
+has_function( jamb,place,passive).
+jammer
+has_function( jammer,jamming, active).
+viewfinder
+has_function(viewfinder, 'framing focusing the picture',passive).
+viewgraph
+has_function(viewgraph,'placed on an overhead projector for display to an audience',passive).
+viewgraph
+has_function(viewgraph,'companies,school,business use it for the meetings',passive).
+vignette
+has_function(ignette,'brief evocative description',passive).
+villa
+has_function(villa,'its a type of house that was originally an ancient roman empire country house',passive).
+vinery
+has_function(vinery,'its a place for the production of wines',passive).
+vinery
+has_function(vinery,'used as warehouses bottling lines, laboratories',passive).
+vineyard
+has_function(vineyard, 'land for growing grapes', raisins).
+virginal
+has_function(virginal,'somethings untouched',passive).
+virino
+has_function(virino, 'infectious particle which cause scrapie and other degenerative disease',passive).
+virtu
+has_function(virtu , 'knowledge of fine arts',passive).
+viscose
+has_function(viscose,'used as basis for manufacturing rayon fibre',passive).
+viscose
+has_function(viscose,'used as cellulose film',passive).
+vagabond
+has_function(vagabond,wandering,active).
+valance
+has_function(valance,decorative,passive).
+vale
+has_function(vale,tourism,passive).
+vale
+has_function(vale,'express farwell',active).
+valenciennes
+has_function(valenciennes,decorative,passive).
+valve
+has_function(valve,regulator,active).
+valve
+has_function(valve,'control flow direction',active).
+vane
+has_function(vane,directions,active).
+vane
+has_function(vane,safety,active).
+vaporizer
+has_function(vaporizer,inhaling,active).
+variable
+has_function(variable,math,active).
+variation
+has_function(variation,measuring,active).
+variometer
+has_function(variometer,'speed calculator',active).
+van
+has_function(van, transporting, goods).
+venture
+has_function(venture, 'measuring flow rate or exerting suction,'active).
+venus
+has_function(venus,'frequently appearing in the twilight sky ',active).
+vernier
+has_function(vernier,'obtaining fractional parts of barometer',active).
+vernier
+has_function(vernier,'obtaining fractional parts of sextant',active).
+pencil
+has_function(pencil,writing,active).
+pencil
+has_function(pencil,drawing,active).
+pipe
+has_function(pipe, convey, active).
+pharmacy
+has_function(pharmacy, sell, active).
+parrot
+has_function(parrot, 'cage bird', passive).
