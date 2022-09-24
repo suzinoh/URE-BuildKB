@@ -43,7 +43,9 @@ functions_KB.populate()
 #"dictionary_1_perf_2022-09-07"
 #"dictionary_2_perf_2022-09-12"
 #"dictionary_3_perf_2022-09-12"
-dict_list = ["dictionary_4_perf_2022-09-13"]
+#"dictionary_4_perf_2022-09-13"
+dict_list = ["dictionary_1_perf_2022-09-07_temp2022-09-15", "dictionary_2_perf_2022-09-12_temp2022-09-19",
+             "dictionary_3_perf_2022-09-12_temp2022-09-20","dictionary_4_perf_2022-09-13_temp2022-09-21"]
 # perfecting the category, last perfected 09092022
 # for item in dict_list:
 #     functions_KB.perfecting_category(item)
@@ -60,7 +62,12 @@ dict_list = ["dictionary_4_perf_2022-09-13"]
 # for item in dict_list:
 #     functions_KB.perfecting_affordance(item)
 
-database.inserting_linked_affordance()
+functions_KB.perfecting_property(dict_list[1])
+
+#TODO: onhold, 09212022 for the linking part :<
+# database.inserting_linked_affordance()
+
+
 
 
 # adding to the database: commented ones are already done

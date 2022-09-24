@@ -152,8 +152,13 @@ def verify_property(possible, verifying, original_word):
         #display options...with number and get input of number
         for i in range(0, len(possible)):
             print(i, ". ", possible[i])
-        index = input("Enter the index of property desired")
-        final = final + "(" + original_word +", " + possible[int(index)] + ")"
+        index = input("Enter the index of property desired, if the property needs to be added enter 100 : \n")
+        if index != "100":
+            final = final + "(" + original_word +", " + possible[int(index)] + ")\n"
+        else:
+            f = open("New_Physical", "a")
+            f.write(original_word)
+            f.write(verifying)
         print(final)
         return final
 
@@ -278,6 +283,7 @@ def perfecting_property(filename):
             definition = each_line
         check =each_line[:12:]
         rest =each_line[12::]
+        property_line = ""
         #TODO: add functionality where some categories do not need an property field! - refer to the planning on Notion
         if check!="has_property":
             #if not has_property, continue
@@ -302,8 +308,3 @@ def perfecting_property(filename):
             elif "texture" in rest:
                 property_line = verify_property(po["property"]["texture"],rest, word)
             f2.write(property_line)
-
-
-
-
-            print("Fuck you 2 :>")
