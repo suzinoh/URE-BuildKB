@@ -162,6 +162,7 @@ def get_new_index(key):
         index = cur.fetchall()
         return(index[0][0])
 
+
 def new_affordance_insert(new_afford_file):
     """ def new_affordance_insert is a function that take in the file, "New_Affordance_xx",
     which contains the lists of new added affordances that were detected and deisred to be inserted
@@ -223,9 +224,11 @@ def query_object(word):
     query = f"SELECT object_id FROM object WHERE object_label = '{word}'"
     cur.execute(query)
     object_id = cur.fetchall()
-    # object_id = object_id[0][0]
-    print(object_id)
-    return object_id
+    if object_id:
+        object_id = object_id[0][0]
+        return object_id
+    else:
+        return False
 
 def query_affordance(affordance):
     query = f"SELECT affordance_id FROM affordance WHERE affordance_label = '{affordance}'"
@@ -233,6 +236,13 @@ def query_affordance(affordance):
     affordance_id = cur.fetchall()
     affordance_id = affordance_id[0][0]
     return affordance_id
+
+def query_physical(physical):
+    query = f"SELECT physical_id FROM physical WHERE physical_label = '{physical}'"
+    cur.execute(query)
+    physical_id = cur.fetchall()
+    physical_id = physical_id[0][0]
+    return physical_id
 
 def query_object_affordance(word, affordance):
     success = True
@@ -274,8 +284,122 @@ def inserting_linked_affordance():
                     # query_affordance(affordance)
                     # query_object_affordance(word, affordance)
 
+def get_label_affordance(string):
+    """splits the string and get the label for AFFORDANCE"""
+    splitting = string.split(",")
+    if len(splitting) != 3:
+        return False
+    affordance_label = splitting[1]
+    affordance_label = affordance_label.replace(" ","",1)
+    affordance_type = splitting[2] #for example passive, active
+    affordance_type = affordance_type.replace("\n", "")
+    affordance_type = affordance_type.replace(" ", "")
+    affordance_type = affordance_type.replace(".", "")
+    if affordance_type != "active" and affordance_type != "passive":
+        return False
+    else: # if valid
+        executeStr = "SELECT affordance_id FROM affordance WHERE affordance_label = '" + affordance_label + "'"
+        cur.execute(executeStr)
+        queried_affordance_id = cur.fetchall()
+        if queried_affordance_id: # if found
+            # print(queried_affordance_id)
+            affordance_id = queried_affordance_id[0]
+            affordance_id = affordance_id[0]
+            return affordance_id
+        else:
+            return False #either label not added in the db, or invalid
+
+def get_label_category(string):
+    """splits the string and get the label for CATEGORY etc. used for inserting the relation
+    between the object and the physical attributes"""
+    splitting = string.split(",")
+    label = splitting[1]
+    if label[0]==" ":
+        label = label.replace(" ","",1)
+    label = label.replace("'","")
+    category = splitting[2]
+    category = category.replace(".","")
+    category = category.replace(")","")
+    category = category.replace(" ","")
+    category = category.replace("\n","")
+    # print(label)
+    # print(category)
+    word = splitting[0].split("(")
+    word = word[0]
+    executeStr = "SELECT physical_category_id FROM physical_attributes WHERE physcial_category_label ='" + category + "'"
+    cur.execute(executeStr)
+    query_category = cur.fetchall()
+    category_id = query_category[0]
+    category_id = category_id[0]
+    # print(category_id)
+    return word, label, category_id
 
 
+def new_physical_insert():
+    f = open("New_Physical", "r")
+    lines = f.readlines()
+    # index = get_new_index("physical") + 1
+    relation_id = 0
+    for each_line in lines:
+        word, label, physical_category = get_label_category(each_line)
+        # descript = 'empty'
+        # query = f"INSERT INTO physical (physical_id, physical_label, physical_description, physical_subcategory)" \
+        #         f" VALUES ({index}, '{label}', '{descript}', {physical_category})"
+        # cur.execute(query)
+        # index = index + 1
+        # conn.commit()
+        object_id = query_object(word)
+        physical_id = query_physical(label)
+        print(object_id, physical_id)
+        query = f"INSERT INTO relation (relation_id, is_inffered, object_id, physical_id, affordance_id, relation_weight)" \
+                f" VALUES ({relation_id}, 0, {object_id}, {physical_id}, NULL, 1)"
+        cur.execute(query)
+        relation_id = relation_id + 1
+        conn.commit()
 
-def new_physical_insert(new_physicals):
-    replacing = ["has_", "has_function", "(", ")", "."]
+
+def relation_insert(file):
+    f = open(file, "r")
+    lines = f.readlines()
+    for each_line in lines:
+        if len(each_line) < 15:
+            word = each_line.replace("\n", "")
+            word = word.lower()
+        elif "%def" in each_line:
+            definition = each_line
+        else:
+            check = each_line[:12:]
+            #case1:  if it is physical attribute
+            if check == "has_property":
+                line = each_line[12::]
+                word2, physical_label, physical_category = get_label_category(line)
+                # print(word, physical_label, physical_category)
+                object_id = query_object(word)
+                physical_id = query_physical(physical_label)
+                # print(object_id, physical_id)
+                relation_id = get_new_index("relation") +1
+                query = f"INSERT INTO relation (relation_id, is_inffered, object_id, physical_id, affordance_id, relation_weight)" \
+                        f" VALUES ({relation_id}, 0, {object_id}, {physical_id}, NULL, 1)"
+                cur.execute(query)
+                # conn.commit()
+                #TODO: uncomment the conn.commit when ready
+            elif check == "has_affordan" or check == "has_function":
+                line = each_line.replace("(", "")
+                line = line.replace(")", "")
+                line = line.replace("'", "")
+                affordance_id = get_label_affordance(line)
+                if affordance_id == False:
+                    f2 = open("Untracked Affordance", "a")
+                    f2.write(word+"\n")
+                    f2.write(line)
+                    f2.close()
+                else:
+                    print(word)
+                    object_id = query_object(word)
+                    print(object_id)
+                    relation_id = get_new_index("relation") + 1
+                    if object_id != False:
+                        query = f"INSERT INTO relation (relation_id, is_inffered, object_id, physical_id, affordance_id, relation_weight)" \
+                                f" VALUES ({relation_id}, 0, {object_id}, NULL, {affordance_id}, 1)"
+                        cur.execute(query)
+                        #conn.commit() #TODO: uncomment when ready

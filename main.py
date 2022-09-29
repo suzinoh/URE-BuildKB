@@ -62,14 +62,13 @@ dict_list = ["dictionary_1_perf_2022-09-07_temp2022-09-15", "dictionary_2_perf_2
 # for item in dict_list:
 #     functions_KB.perfecting_affordance(item)
 
-functions_KB.perfecting_property(dict_list[1])
+# functions_KB.perfecting_property(dict_list[3])
+
 
 #TODO: onhold, 09212022 for the linking part :<
 # database.inserting_linked_affordance()
 
-
-
-
+database.relation_insert("dictionary_3_perf_2022-09-12_temp2022-09-20_phy_2022-09-27")
 # adding to the database: commented ones are already done
 # TODO: get object in and relations in. (needs perf)
 # db.add_category(functions_KB.po["category"])
