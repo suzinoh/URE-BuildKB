@@ -1,0 +1,419 @@
+yashmak
+%definition: A veil concealing all of the face except the eyes, worn by some Muslim women in public.
+is_a(yashmak, garment).
+has_affordance(yashmak, cover, passive)
+has_affordance(yashmak, worn, active)
+
+yataghan
+%definition:  A sword without a guard and typically with a double-curved blade, used in Muslim countries.
+is_a(yataghan, tool).
+has_a(yataghan,'double-curved blade').
+
+yawl
+%definition: A two-masted fore-and-aft-rigged sailing boat with the mizzenmast stepped far aft so that the mizzen boom overhangs the stern.
+is_a(yawl, vehicle).
+has_a(yawl,'two mast').
+has_a(yawl,mizzenmast).
+
+yenisei
+%definition: A river in Siberia, which rises in the mountains on the Mongolian border and flows 4,106 km (2,566 miles) generally northwards to the Arctic coast, emptying into the Kara Sea.
+is_a(yenisei, place).
+has_affordance(yenisei, moving, active)
+
+yield
+%definition:  Produce or provide (a natural, agricultural, or industrial product)
+has_funtion(yield,produce,active).
+has_function(yield,provide,active).
+is_a(yield, action).
+is_a(yield, object).
+is_a(yield, material).
+
+yoke
+%definition: A wooden crosspiece that is fastened over the necks of two animals and attached to the plough or cart that they are to pull.
+is_a(yoke, tool).
+has_affordance(yoke,wooden,texture).
+has_affordance(yoke, hold, active)
+
+yukon
+%definition: A river of north-western North America, which rises in Yukon Territory, north-western Canada, and flows 3,020 km (1,870 miles) westwards through central Alaska to the Bering Sea.
+is_a(yukon, proper noun).
+has_affordance(yukon, moving, active)
+
+yurt
+
+Drink
+%definition: Take (a liquid) into the mouth and swallow."
+is_a(drink, food).
+has_function(drink, swallow, 'into the mouth').
+
+dredge
+%definition: Clear the bed of (a harbour, river, or other area of water) by scooping out mud, weeds, and rubbish with a dredge.
+is_a(dredge, action).
+has_affordance(dredge, clean, active)
+
+dredger
+%definition: A boat designed for dredging harbours or other bodies of water.
+is_a(dredger, device).
+has_affordance(dredger, clean, active)
+
+dregs
+%definition: The remnants of a liquid left in a container, together with any sediment.
+is_a(dregs, term).
+has_a(dregs,liquid).
+has_a(dregs,lediment).
+has_property(dregs, unlabeled, shape)
+
+dress
+%definition: Put on one's clothes.
+is_a(dress, action).
+has_affordance(dress, worn, active)
+
+dresser
+%definition: A sideboard with shelves above for storing and displaying plates and kitchen utensils.
+is_a(dresser,object).
+has_affordance(dresser, store, passive)
+
+drey
+%definition: The nest of a squirrel, typically in the form of a mass of twigs in a tree.
+is_a(drey, structure).
+has_a(drey,twigs).
+has_function(drey,nest,passive).
+
+drift
+%definition: Be carried slowly by a current of air or water.
+is_a(drift, action).
+has_affordance(drift, carrying of people or things, active)
+has_property(drift, unlabeled, material)
+has_property
+drill
+%definition: A tool or machine with a rotating cutting tip or reciprocating hammer or chisel, used for making holes.
+is_a(drill, tool).
+has_affordance(drill, poke, active)
+has_property(drill, unlabeled, material)
+has_property(drill, metal, material)
+has_property(drill, brass, material)
+
+drink
+%definition: Take (a liquid) into the mouth and swallow.
+is_a(drink, action).
+has_a(drink,liquid).
+has_affordance(drink, energy source, passive)
+
+drip
+%definition: Let fall or be so wet as to shed small drops of liquid.
+is_a(drip, action).
+has_a(drip,liquid).
+has_affordance(drip, drop, active)
+
+dripstone
+%definition: A moulding over a door or window which deflects rain.
+is_a(dripstone,material).
+has_affordance(dripstone, protect, passive)
+has_property
+drive
+%definition: Operate and control the direction and speed of a motor vehicle.
+is_a(drive, action).
+has_a(drive,vehicle).
+has_affordance(drive, drive, active)
+
+driver
+%definition:  A person who drives a vehicle.
+is_a(driver, title).
+has_affordance(driver, drive, active)
+
+dockage
+%definition: Accommodation or berthing of ships in docks.
+is_a(dockage, structure).
+
+DOG
+%definition: A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, non-retractable claws, and a barking, howling, or whining voice.
+is_a(dog, animal).
+
+DEER
+%definition:  A hoofed grazing or browsing animal, with branched bony antlers that are shed annually and typically borne only by the male.
+is_a(deer, animal).
+has_function(deer, grazing, animal).
+
+DONKEY
+%definition: A domesticated hoofed mammal of the horse family with long ears and a braying call, used as a beast of burden; an ass
+is_a(donkey, animal).
+has_affordance(donkey, carrying of people or things, active)
+
+DESK
+%definition: A piece of furniture with a flat or sloping surface and typically with drawers, at which one can read, write, or do other work.
+is_a(desk, furniture).
+
+DESKTOP
+%definition: The working surface of a desk.
+is_a(desktop, structure).
+
+DOLPHIN
+%definition: A small gregarious toothed whale that typically has a beaklike snout and a curved fin on the back. Dolphins have become well known for their sociable nature and high intelligence."
+is_a(dolphin, animal).
+has_affordance(dolphin, sociable, nature).
+has_affordance(dolphin, high, intelligence).
+
+DOCTOR
+%definition: A person who is qualified to treat people who are ill.
+is_a(doctor, title).
+has_affordance(doctor, support, active)
+
+DENTIST
+%definition: A person who is qualified to treat diseases and other conditions that affect the teeth and gums, especially the repair and extraction of teeth and the insertion of artificial ones."
+is_a(dentist, title).
+has_affordance(dentist, support, active)
+has_function(dentist, heal, active).
+
+DRUM
+%definition:A percussion instrument sounded by being struck with sticks or the hands, typically cylindrical, barrel-shaped, or bowl-shaped, with a taut membrane over one or both ends.
+is_a(drum, instrument).
+has_property(drum, cylinder, shape)
+has_propertyhas_property(drum, bowl, shape)
+has_affordance(drum, 'taut membrane', 'on ends').
+has_affordance(drum, music, active)
+
+DRESSER
+%definition:  A sideboard with shelves above for storing and displaying plates and kitchen utensils."
+is_a(dresser, structure).
+has_affordance(dresser, store, passive)
+has_affordance(dresser, display, active)
+
+DESIGNER
+%definition:  A person who plans the look or workings of something prior to it being made, by preparing drawings or plans.
+is_a(designer, title).
+has_affordance(designer, support, active)
+
+DETECTIVE
+%definition: A person, especially a police officer, whose occupation is to investigate and solve crimes.
+is_a(detective, title).
+is_a(detective, title).
+has_function(detective, 'to investigate crimes', active).
+has_function(detective,  'to solve crimes', active).
+
+DAUGHTER
+%definition: A girl or woman in relation to either or both of her parents.
+is_a(daughter, title).
+
+Dagger
+%definition: A short knife with a pointed and edged blade, used as a weapon.
+is_a(dagger, tool).
+has_a(dagger, blade).
+has_a(dagger, handle).
+has_function(dagger, weapon,active).
+has_affordance(dagger, pointed, texture).
+has_affordance(dagger, edged, texture).
+
+Desert
+%definition: Abandon (a person, cause, or organization) in a way considered disloyal or treacherous.
+is_a(desert, place).
+has_affordance(desert, throwing, active)
+
+Doghouse
+%definition: A dog's kennel.
+is_a(doghouse, place).
+has_affordance(doghouse, protect, passive)
+
+doohickey
+%definition: A small object or gadget, especially one whose precise name the speaker cannot recall.
+is_a(doohickey, object).
+has_affordance(door, hinged, other).
+has_affordance(door, sliding, other).
+has_affordance(door, revolving, other).
+
+doorbell
+%definition: A bell in a building which can be rung by visitors outside to signal their arrival.
+is_a(doorbell, object).
+has_affordance(doorbell, music, active)
+
+doorknob
+%definition: A handle on a door that is turned to release the latch.
+is_a(doorknob, object).
+
+doormat
+%definition: A mat placed in a doorway, on which people can wipe their shoes on entering a building.
+is_a(doormat, object).
+has_affordance(doormat, wipe, active)
+
+doornail
+%definition: A stud set in a door for strength or as an ornament.
+is_a(doornail, material).
+has_affordance(doornail, hold, active)
+has_affordance(doornail, decorative, passive)
+
+doorpost
+%definition: Each of the two upright parts of a door frame.
+is_a(doorpost, material).
+has_property
+doorstep
+doorstop: A fixed or heavy object that keeps a door open or stops it from banging against a wall.
+is_a(doorstep, object).
+has_affordance(doorstop, fixed, stable).
+has_affordance(doorstop, heavy, weight).
+has_affordance(doorstep, support, active)
+
+doorway
+%definition: An entrance to a room or building through a door.
+is_a(doorway, structure).
+has_a(doorway, door).
+
+dooryard
+%definition: a yard or garden by the door of a house.
+is_a(dooryard, place).
+is_a(dooryard, term).
+
+dope
+%definition: A drug taken illegally for recreational purposes, especially cannabis.
+is_a(dope, animal).
+
+dorado
+%definition: edible marine fish of warm seas, with silver and bright blue or green coloration when alive.
+is_a(dorado, animal).
+has_a(dorado, marine). 
+has_property(dorado, grey, color)
+has_property(dorado, blue, color)
+has_property(dorado, green, color)
+
+dorm
+%definition: A dormitory.
+is_a(dorm, place).
+
+dormer
+%definition: a window that projects vertically from a sloping roof.
+is_a(dormer, structure).
+has_affordance(dormer, visibility, active)
+
+dormitory
+dosage: the size or frequency of a dose of a medicine or drug.
+is_a(dormitory, term).
+is_a(dormitory, term).
+has_a(dosage, medicine).
+has_a(dosage, drug).
+
+dose
+%definition: A quantity of a medicine or drug taken or recommended to be taken at a particular time.
+is_a(dose, action).
+has_a(dose, medicine).
+has_a(dose, drug).
+has_affordance(dose, conduct heat, passive)
+
+dosimeter
+
+xerox
+%definition: A xerographic copying process.
+is_a(xerox, action).
+is_a(xerox, device).
+has_a(xerox,ink).
+has_a(xerox,paper).
+has_a(xerox,laser).
+has_function(xerox,scanning,active).
+has_affordance(xerox, images, active)
+has_function(xerox,copying,active).
+
+xylophone
+%definition: A musical instrument played by striking a row of wooden bars of graduated length with one or more small wooden or plastic beaters.
+is_a(xylophone,instrument).
+has_a(xylophone,bars).
+has_a(xylophone,resonators).
+has_a(xylophone,mallets).
+has_affordance(xylophone, music, active)
+has_property(xylophone, wood, material)
+
+xenolith
+%definition:  A piece of rock within an igneous mass which is not derived from the original magma but has been introduced from elsewhere, especially the surrounding country rock.
+is_a(xenolith, structure).
+has_affordance(xenolith,igneous,volume).
+
+Lamp
+%definition: A device for giving light, either one consisting of an electric bulb together with its holder and shade or cover, or one burning gas or oil and consisting of a wick or mantle and a glass shade.
+is_a(lamp, device).
+has_a(lamp, 'electric bulb',passive).
+has_a(lamp,holder).
+has_a(lamp,wick).
+has_a(lamp,mantle).
+has_a(lamp,'glass shade',passive).
+has_affordance(lamp, illuminate, active)
+has_affordance(lamp, gas, stable).
+
+Laptop
+%definition:  A computer that is portable and suitable for use while travelling.
+is_a(laptop, device).
+has_affordance(laptop, calculation, active)
+has_properity(laptop, portable, other).
+has_properity(laptop, suitable, other).
+
+Leather
+%definition: A material made from the skin of an animal by tanning or a similar process.
+is_a(leather, material).
+has_affordance(leather, warmth, passive)
+
+Lemon
+%definition: A pale yellow oval citrus fruit with thick skin and fragrent , acidic juice .
+is_a(lemon, food).
+has_properity(lemon , yellow , color).
+has_properity(lemon , oval , color).
+has_properity(lemon , thick , color).
+has_properity(lemon , fragrent  , other).
+
+Lion
+%definition: A large tawny-coloured cat that lives in prides, found in Africa and north-western India. The male has a flowing shaggy mane and takes little part in hunting, which is done cooperatively by the females.
+is_a(lion, animal ).
+has_properity(lion, large, shape).
+has_properity(lion, tawny, color).
+has_properity(lion, shaggy, other).
+
+Leggings
+%definition: Tight-fitting stretch trousers, typically worn by women or girls.
+is_a(leggings, garment).
+has_affordance(leggings, worn, active)
+has_properity(leggings, tight, shape).
+
+Leg
+%definition: Each of the limbs on which a person or animal walks and stands.
+is_a(leg, body part).
+has_a(leg,person).
+has_a(leg,animal).
+has_affordance(leg, walk, passive)
+has_function(leg, stand, passive).
+
+Library
+%definition: A building or room containing collections of books, periodicals, and sometimes films and recorded music for use or borrowing by the public or the members of an institution.
+is_a(library, place).
+is_a(library, structure).
+has_function(library, 'borrowing by public', active).
+has_function(library, 'borrowing by member of institution', active).
+has_properity(library, books, materials).
+has_properity(library, periodicals, materials).
+has_properity(library, films, materials).
+has_properity(library, music, materials).
+
+Lamb
+%definition: A young sheep.
+is_a(lamb, animal).
+
+London
+%definition:  The capital of the United Kingdom, situated in south-eastern England on the River Thames; population
+is_a(london, place).
+has_a(london, population).
+
+Lung
+%definition: Each of the pair of organs situated within the ribcage, consisting of elastic sacs with branching passages into which air is drawn, so that oxygen can pass into the blood and carbon dioxide be removed. 
+is_a(lung, body part).
+has_a(lung , 'elastic sacs',passive).
+has_a(lung , 'branching passages',passive). 
+has_function(lung,'air is drawn',active). 
+has_property(lung, unlabeled, shape)
+
+Lighter
+%definition: A device that produces a small flame, especially one used to light cigarettes.
+is_a(lighter, device).
+has_affordance(lighter, illuminate, active)
+has_property(lighter, unlabeled, shape)
+has_affordance(lighter, flame, stable).
+
+Luggage
+%definition: Suitcases or other bags in which to pack personal belongings for travelling.
+is_a(luggage, object).
+is_a(luggage, tool).
+has_affordance(luggage, contain solid, passive)
+has_function(luggage,'pack belonging',active).
+

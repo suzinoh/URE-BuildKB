@@ -331,7 +331,6 @@ def get_label_category(string):
     query_category = cur.fetchall()
     category_id = query_category[0]
     category_id = category_id[0]
-    # print(category_id)
     return word, label, category_id
 
 
@@ -381,7 +380,7 @@ def relation_insert(file):
                 query = f"INSERT INTO relation (relation_id, is_inffered, object_id, physical_id, affordance_id, relation_weight)" \
                         f" VALUES ({relation_id}, 0, {object_id}, {physical_id}, NULL, 1)"
                 cur.execute(query)
-                # conn.commit()
+                #conn.commit()
                 #TODO: uncomment the conn.commit when ready
             elif check == "has_affordan" or check == "has_function":
                 line = each_line.replace("(", "")
@@ -389,10 +388,11 @@ def relation_insert(file):
                 line = line.replace("'", "")
                 affordance_id = get_label_affordance(line)
                 if affordance_id == False:
-                    f2 = open("Untracked Affordance", "a")
-                    f2.write(word+"\n")
-                    f2.write(line)
-                    f2.close()
+                    # f2 = open("Untracked Affordance", "a")
+                    # f2.write(word+"\n")
+                    # f2.write(line)
+                    # f2.close()
+                    print(line)
                 else:
                     print(word)
                     object_id = query_object(word)
@@ -402,4 +402,4 @@ def relation_insert(file):
                         query = f"INSERT INTO relation (relation_id, is_inffered, object_id, physical_id, affordance_id, relation_weight)" \
                                 f" VALUES ({relation_id}, 0, {object_id}, NULL, {affordance_id}, 1)"
                         cur.execute(query)
-                        #conn.commit() #TODO: uncomment when ready
+                        conn.commit() #TODO: uncomment when ready
