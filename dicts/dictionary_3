@@ -1,0 +1,1443 @@
+Paint
+%defintion: A coloured substance which is spread over a surface and dries to leave a thin decorative or protective coating.
+is_a(paint,material).
+has_function(paint,coating,passive).
+has_property(paint,decorative,passive).
+has_property(paint,protective,passive).
+has_affordance(paint,thintexture).
+
+Palette
+%defintion: A thin board or slab on which an artist lays and mixes colours.
+is_a(palette,tools).
+has_function(palette,mix,active).
+has_a(palette,board).
+has_a(palette,slab).
+has_affordance(palette,thin,hardness).
+
+Protractor
+%defintion: An instrument for measuring angles, typically in the form of a flat semicircle marked with degrees along the curved edge.
+is_a(protractor,instrument).
+has_function(protractor,measure,active).
+has_property(protractor,semicircle,shape).
+has_property(protractor,flat,shape).
+has_property(protractor,degrees,other).
+has_a(protractor,degrees).
+has_affordance(protractor,flat,volume).
+
+Pebble
+%definition: A small stone made smooth and round by the action of water or sand.
+is_a(pebble, stone).
+has_property(pebble, round, shape).
+has_affordance(pebble, smooth, texture).
+
+Passport
+
+Ace
+%definition: A playing card with a single spot on it, ranked as the highest card in its suit in most card games.
+is_a(ace, 'playing instrument').
+has_a(ace, paper/plastic).
+has_a(ace, painting).
+has_function(ace, entertaining, active).
+has_property(ace, red, color).
+has_property(ace, black, color).
+has_property(ace, heart, shape).
+has_property(ace, diamond, shape).
+has_property(ace, leaf, shape).
+has_property(ace, spades , shape).
+has_affordance(ace, high, rank).
+
+Argyle
+%definition: A pattern composed of diamonds of various colors on a plain background, used in knitted garments such as sweaters and socks.
+is_a(argyle, pattern).
+has_a(argyle, diamonds).
+has_a(argyle, background).
+has_a(argyle, garment).
+has_function(argyle, beauty, passive).
+has_property(argyle, diamond, shape).
+
+Adobe
+%definition: A kind of clay used as a building material.
+is_a(adobe, clay).
+is_a(adobe, art).
+has_a(adobe, soil).
+has_function(adobe, material).
+has_property(adobe, brown, color).
+has_affordance(adobe, soft, texture).
+has_affordance(adobe, low, weight).
+has_affordance(adobe, beautiful, look).
+
+Asylum
+%definition: The protection granted by a state to someone who has left their home country as a political refugee.
+is_a(asylum, politics).
+has_a(asylum, person).
+has_function(asylum, protecting, passive).
+has_affordance(asylum, granted, state).
+
+Armpit
+%definition: A hollow under the arm at the shoulder.
+is_a(armpit, body part).
+has_a(armpit, muscle).
+has_a(armpit, skin).
+has_property(armpit, hole, shape).
+has_property(armpit, white, color).
+has_affordance(armpit, yes, hair).
+
+Apron
+%definition: A protective garment worn over the front of one's clothes and tied at the back.
+is_a(apron, garment).
+has_a(apron, cloth).
+has_function(apron, protection).
+has_property(apron, white, color).
+has_affordance(aapron, used, kitchen).
+
+Appurtenance
+%definition: An accessory or other item associated with a particular activity or style of living.
+is_a(appurtenance, accessory).
+
+Aggregate
+%definition:  A whole formed by combining several separate elements.
+is_a(aggregate, mixture).
+has_a(aggregate, combination).
+has_a(aggregate, fruit).
+has_function(aggregate, 'to build',passive).
+has_affordance(aggregate, high, weight).
+
+Alley
+%definition: A narrow passageway between or behind buildings.
+is_a(alley, path).
+has_a(alley, pivot).
+has_function(alley, connecting, passive).
+has_property(alley, narrow, geometry).
+has_property(alley, gray, color).
+has_affordance(alley, city, existance).
+
+Astronaut
+%definition: A person who is trained to travel in a spacecraft.
+is_a(astronaut, person).
+has_a(astronaut, training).
+has_function(astronaut, discovering, active).
+has_property(astronaut, high, knowledge).
+has_property(astronaut, high, trained).
+has_affordance(astronaut, nasa, office).
+
+Admixture
+%definition:  A mixture.
+is_a(admixture, mixture).
+has_a(admixture, material).
+has_function(admixture, drink, passive).
+has_property(admixture, number, material).
+
+Asphalt
+%definition: A mixture of dark bituminous pitch with sand or gravel, used for surfacing roads, flooring, roofing, etc.
+is_a(asphalt, mixture).
+has_a(asphalt, pivot).
+has_function(asphalt, road, passive).
+has_property(asphalt, gray/black, asphalt).
+has_affordance(asphalt, car, drive).
+has_affordance(asphalt, high, hardness).
+
+Aphid
+%definition:A small bug which feeds by sucking sap from plants; a blackfly or greenfly. Aphids reproduce rapidly, sometimes producing live young without mating, and large numbers can cause extensive damage to plants. 
+is_a(aphid, insect).
+has_a(aphid, body).
+has_function(aphid, damage, active).
+has_property(aphid, small, size).
+has_property(aphid, fly, movement).
+has_property(aphid, light, weight).
+has_affordance(aphid, against, plant).
+has_property(aphid, high, annoying).
+
+Athlete
+%definition:  A person who is proficient in sports and other forms of physical exercise.
+is_a(athlete, person).
+has_a(athlete, handle).
+has_property(athlete, 'proficient in sports',passive).
+has_property(athlete, 'proficient in other forms of physical exercise',passive).
+has_function(athlete, 'breaking things',passive).
+
+Armchair
+%definition:  A large, comfortable chair with side supports for a person's arms.
+is_a(armchair, chair).
+has_a(armchair, 'side supports',passive).
+has_property(armchair, large).
+has_property(armchair, comfortable).
+
+Avocado
+%definition: A pear-shaped fruit with a rough leathery skin and smooth, oily edible flesh.
+is_a(avocado, fruit).
+has_a(avocado, pear-shaped).
+has_property(avocado, 'rough leathery skin',passive).
+has_property(avocado, smooth).
+has_property(avocado, 'oily edible flesh',passive).
+
+Anodyne
+%definition:  Not likely to cause offence or disagreement and somewhat dull.
+is_a(anodyne, medicine).
+has_function(anodyne, 'not likely to cause offence',passive).
+has_function(anodyne, 'not likely to cause disagreement',passive).
+has_function(anodyne, 'not likely to cause dullness',passive).
+
+Abdomen
+%definition: The part of the body of a vertebrate containing the digestive and reproductive organs; the belly.
+is_a(abdomen, belly).
+has_property(abdomen, 'vertebrate',passive).
+has_function(abdomen, 'digestive organ',passive).
+has_function(abdomen, 'reproductive organs',passive).
+
+Aglet
+%definition: A metal or plastic tube fixed tightly round each end of a shoelace.
+is_a(aglet, tube).
+has_a(aglet, 'fixed tightly round each end',passive).
+has_property(aglet, metal).
+has_property(aglet, plastic).
+
+Appetizer
+%definition: A small dish of food or a drink taken before a meal or the main course of a meal to stimulate one's appetite.
+is_a(appetizer, 'food or a drink').
+has_a(appetizer, 'small dish',passive).
+has_property(appetizer, 'main course of a meal',passive).
+has_function(appetizer, 'stimulate ones appetite',passive).
+
+Astrodome
+%definition: An enclosed stadium with a domed roof.
+is_a(astrodome, stadium).
+has_property(astrodome, 'enclosed stadium',passive).
+has_property(astrodome, 'domed roof',passive).
+
+Airlock
+%definition: A stoppage of the flow in a pump or pipe, caused by an air bubble.
+is_a(airlock, device).
+has_function(airlock, 'stoppage of the flow',passive).
+
+Axe
+%definition: A tool used for chopping wood, typically of iron with a steel edge and wooden handle. 
+is_a(axe, tool).
+has_a(axe, 'wooden handle',passive).
+has_property(axe, 'iron with a steel edge',passive).
+has_function(axe, 'chopping wood',passive).
+
+Anorak
+%definition:  A waterproof jacket, typically with a hood, of a kind originally used in polar regions.
+is_a(anorak, jacket).
+has_a(anorak, hood).
+has_property(anorak, waterproof).
+has_function(anorak, 'used in polar regions',passive).
+
+Acorn
+%definition: The fruit of the oak tree, a smooth oval nut in a rough cup-shaped base.
+is_a(acorn, fruit).
+has_a(acorn, nut).
+has_a(acorn, seed).
+has_a(acorn, shell).
+has_function(acorn, 'for eating', passive).
+has_property(acorn, green, color).
+has_property(acorn, brown, color).
+has_property(acorn, yellow, color).
+has_property(acorn, nutty, taste).
+has_affordance(acorn, rough, texture).
+has_affordance(acorn, hard, texture).
+
+Alligator
+%definition: A large semiaquatic reptile similar to a crocodile but with a broader and shorter head, native to the Americas and China.
+is_a(alligator, crocodilian).
+has_a(alligator, 'native to the americas and china',passive).
+has_property(alligator, 'large semiaquatic reptile',passive).
+has_property(alligator, 'broader and shorter head',passive).
+
+Apple
+%definition: The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
+is_a(apple, fruit).
+has_function(apple, cooking, active).
+has_function(apple, 'making cider', active).
+has_property(apple, round, shape).
+has_property(apple, thin, shape).
+has_property(apple, red, color). 
+has_property(apple, green, color). 
+has_property(apple, crisp, taste). 
+
+Air
+%definition: The invisible gaseous substance surrounding the earth, a mixture mainly of oxygen and nitrogen.
+is_a(air, 'invisible gas').
+has_a(air, oxygen).
+has_a(air, nitrogen).
+
+Airport
+%definition: A complex of runways and buildings for the take-off, landing, and maintenance of civil aircraft, with facilities for passengers.
+has_a(airport, building).
+has_a(airport, runway).
+has_function(airport, 'to take off', aircrafts).
+has_function(airport, landing, aircrafts).
+
+Ambulance
+%definition: A vehicle equipped for taking sick or injured people to and from hospital, especially in emergencies.
+is_a(ambulance, vehicle).
+has_function(ambulance, 'taking sick', 'to hospital').
+
+Anchor
+%definition: A heavy object attached to a cable or chain and used to moor a ship to the sea bottom, typically having a metal shank with a pair of curved, barbed flukes at one end.
+is_a(anchor, tool).
+has_a(anchor, shank).
+has_a(anchor, flukes).
+has_function(anchor, 'to moor a ship to the sea bottom', active).
+has_property(anchor, silver, color).
+has_property(anchor, brown, color).
+has_property(anchor, metal, material).
+has_affordance(anchor, rough, texture).
+has_affordance(anchor, hard, texture).
+has_affordance(anchor, hard, weight).
+
+Asteriod
+%definition:  A small rocky body orbiting the sun. Large numbers of these, ranging enormously in size, are found between the orbits of Mars and Jupiter, though some have more eccentric orbits.
+is_a(asteroid, rock).
+has_a(asteroid, body).
+has_a(asteroid, orbit).
+has_function(asteroid, 'orbit stars', passive).
+has_property(asteroid, grey, color).
+has_property(asteroid, iron, material).
+has_property(asteroid, clay, material).
+has_property(asteroid, metal, material).
+has_affordance(asteroid, rough, texture).
+
+Avalanche
+%definition: A mass of snow, ice, and rocks falling rapidly down a mountainside.
+is_a(avalanche, snow).
+is_a(avalanche, ice).
+is_a(avalanche, rocks).
+has_a(avalanche, ice).
+has_a(avalanche, snow).
+has_a(avalanche, rocks).
+has_function(avalanche, disaster, passive).
+has_property(avalanche, white, color).
+has_affordance(avalanche, hard, texture).
+
+Balloon
+%definition: A small coloured rubber bag that is inflated with air and then sealed at the neck, used as a child's toy or a decoration.
+is_a(balloon, 'rubber bag').
+has_a(balloon, air).
+has_function(balloon, decoration, passive).
+has_property(balloon, white, color).
+has_property(balloon, red, color).
+has_property(balloon, pink, color).
+has_property(balloon, bulb, shape).
+has_property(balloon, rubber, material).
+has_affordance(balloon, 'very fragile', stable).
+
+Battery
+%definition: A container consisting of one or more cells, in which chemical energy is converted into electricity and used as a source of power.
+is_a(battery, container).
+has_a(battery, cell).
+has_function(battery, 'power source', active).
+has_property(battery, lithium, material).
+has_affordance(battery, hard, texture).
+
+Beehive
+%definition: A dome-shaped or boxlike structure in which bees are kept.
+is_a(beehive, container).
+has_a(beehive, partitions).
+has_a(beehive, holes).
+has_function(beehive, 'houses bees', passive).
+has_property(beehive, brown, color).
+has_property(beehive, black, color).
+has_affordance(beehive, hard, texture).
+
+Blizzard
+%definition: A severe snowstorm with high winds.
+is_a(blizzard, snowstorm).
+has_a(blizzard, 'high winds').
+has_a(blizzard, snow).
+has_function(blizzard, 'high wind', passive).
+has_property(blizzard, wind, material).
+has_affordance(blizzard, dangerous, other).
+
+Bulldozer
+%definition:  A powerful track-laying tractor with caterpillar tracks and a broad curved upright blade at the front for clearing ground.
+is_a(bulldozer, tractor).
+has_a(bulldozer, battery).
+has_a(bulldozer, engine).
+has_a(bulldozer, rollers).
+has_a(bulldozer, blade).
+has_a(bulldozer, ripper).
+has_function(bulldozer, 'clearing ground', active).
+has_property(bulldozer, metal, material).
+has_property(bulldozer, brown, color).
+has_property(bulldozer, yellow, color).
+has_affordance(bulldozer, hard, texture).
+
+Bullet
+%definition: A metal projectile for firing from a rifle, revolver, or other small firearm, typically cylindrical and pointed, and sometimes containing an explosive.
+is_a(bullet, projectile).
+has_a(bullet, 'metal body').
+has_function(bullet, piercing, passive).
+has_property(bullet, metal, material).
+has_property(bullet, rubber, material).
+has_affordance(bullet, hard, texture).
+
+Cigarette
+%definition: A thin cylinder of finely cut tobacco rolled in paper for smoking.
+is_a(cigarette, 'rolled tobacco paper').
+has_a(cigarette, tobacco).
+has_a(cigarette, 'filter tip').
+has_a(cigarette, casing).
+has_function(cigarette, 'confining animals', passive).
+has_property(cigarette, metal, material).
+has_property(cigarette, wood, material).
+has_property(cigarette, cylindrical, shape).
+has_affordance(cigarette, g, weight).
+
+Closet
+%definition: A tall cupboard or wardrobe with a door, used for storage. A silky case spun by the larvae of many insects for protection as pupae.
+is_a(closet, cupboard).
+has_a(closet, door).
+has_a(closet, drawer).
+has_function(closet, 'for storage', passive).
+has_property(closet, metal, material).
+has_property(closet, wood, material).
+has_affordance(closet, hard, texture).
+
+Cricket
+%definition: An insect related to the grasshoppers but with shorter legs. The male produces a characteristic musical chirping sound.
+is_a(cricket, insect).
+has_a(cricket, eyes).
+has_a(cricket, legs).
+has_a(cricket, mouth).
+has_a(cricket, abdomen).
+has_function(cricket, insect, passive).
+has_property(cricket, black, color).
+has_property(cricket, brown, color).
+has_property(cricket, yellow, color).
+has_affordance(cricket, 'rough body', texture).
+
+glitter
+%definition: tiny pieces of sparkling material used for decoration.
+has_a(glitter, 'sparkling material').
+has_function(glitter, decoration, active).
+has_property(glitter, sparkling, material).
+has_affordance(glitter, tiny, size).
+
+glen
+%definition: A narrow valley, especially in Scotland or Ireland.
+is_a(glen,space).
+has_function(glen,valley,passive).
+has_property(glen,scotland,other).
+has_property(glen,ireland,other).
+has_affordance(glen,narrow,other).
+
+glengarry
+%definition: A brimless boat-shaped hat with a cleft down the centre, typically having two ribbons hanging at the back, worn as part of Highland dress.
+is_a(glengarry,material).
+has_function(glengarry,hat,active).
+has_function(glengarry,worn,active).
+has_function(glengarry,'highland dress',active).
+has_property(glengarry,cleft,shape).
+has_property(glengarry,centre,shape).
+has_property(glengarry,'two ribbons',material).
+
+glider
+%definition: A light aircraft that is designed to fly without using an engine.
+is_a(glider,vehicle).
+has_function(glider,fly,active).
+has_property(glider,'without engine,material',passive).
+has_affordance(glider,light,weight).
+
+globe
+%definition: The earth
+is_a(globe, earth).
+
+globule
+%definition: A small round particle of a substance; a drop.
+is_a(globule,material).
+has_function(globule,substance,active).
+has_function(globule,particle,active).
+has_function(globule,drop,active).
+has_affordance(globule,small,volume).
+
+glockenspiel
+%definition: A musical percussion instrument having a set of tuned metal pieces mounted in a frame and struck with small hammers.
+is_a(glockenspiel,instrument).
+has_a(glockenspiel,metal).
+has_a(glockenspiel,frame).
+has_function(glockenspiel,music,active).
+has_property(glockenspiel,percussion,other).
+has_property(glockenspiel,tuned,other).
+
+glossy
+%definition: Shiny and smooth.
+has_function(glossy,shine,passive).
+has_function(glossy,smooth,passive).
+
+glove
+%definition: A covering for the hand worn for protection against cold or dirt and typically having separate parts for each finger and the thumb.
+is_a(glove,material).
+has_function(glove,worn,active).
+has_function(glove,covering,active).
+has_function(glove,protection,active).
+has_property(glove,'separate parts',material).
+
+gluon
+%definition:  A hypothetical massless subatomic particle believed to transmit the force binding quarks together in a hadron.
+is_a(gluon,material).
+has_a(gluon,hadron).
+has_function(gluon,transmit,active).
+has_function(gluon,binding,active).
+has_property(gluon,hypothetical,other).
+has_property(gluon,force,other).
+has_affordance(gluon,massless,weight).
+has_affordance(gluon,subatomic,other).
+
+glyph
+%definition: A hieroglyphic character or symbol.
+has_function(glyph,character,active).
+has_function(glyph,symbol,active).
+
+glyptography
+%definition: The art or scientific study of gem engraving.
+is_a(glyptography,academic).
+has_a(glyptography,gem).
+has_function(glyptography,study,active).
+has_property(glyptography,engraving,other).
+
+gnomon
+%definition: The projecting piece on a sundial that shows the time by the position of its shadow.
+is_a(gnomon,object).
+has_a(gnomon,sundial).
+has_function(gnomon,'show time',active).
+has_property(gnomon,shadow,other).
+
+go
+%definition:  Move from one place to another; travel.
+is_a(go,mobility).
+has_function(go,travel,active).
+
+goad
+%definition: Provoke or annoy (someone) so as to stimulate an action or reaction.
+is_a(goad,activity).
+has_function(goad,stimulate,active).
+has_function(goad,action,active).
+has_function(goad,reaction,active).
+has_property(goad,provoke,other).
+has_property(goad,annoy,other).
+
+goal
+%definition: (in soccer, rugby, hockey, and some other games) a pair of posts linked by a crossbar and typically with a net between, forming a space into or over which the ball has to be sent in order to score.
+is_a(goal,space).
+has_a(goal,net).
+has_a(goal,posts).
+has_a(goal,crossbar).
+has_function(goal,score,passive).
+
+goalmouth
+%definition: The area just in front of a goal in soccer or hockey.
+is_a(goalmouth,space).
+has_a(goalmouth,net).
+has_a(goalmouth,posts).
+has_function(goalmouth,area,passive).
+has_property(goalmouth,front,other).
+
+graffiti
+%definition: Writing or drawings scribbled, scratched, or sprayed illicitly on a wall or other surface in a public place.
+is_a(graffiti,activity).
+has_a(graffiti,drawing).
+has_a(graffiti,engraving).
+has_a(graffiti,lettering).
+has_function(graffiti,drawing,active).
+has_function(graffiti,scribble,active).
+has_property(graffiti,public,other).
+
+graphic
+%definition: Relating to visual art, especially involving drawing, engraving, or lettering.
+is_a(graphic,activity).
+has_a(graphic,drawing).
+has_a(graphic,engraving).
+has_a(graphic,lettering).
+has_function(graphic,art,active).
+
+grenade
+%definition: A small bomb thrown by hand or launched mechanically.
+is_a(grenade,object).
+has_function(grenade,bomb,active).
+has_property(grenade,thrown,other).
+has_property(grenade,launch,other).
+has_affordance(grenade,small,volume).
+
+Gillie
+%definition: (in Scotland) a man or boy who attends someone on a hunting or fishing expedition.
+is_a(gillie, man).
+has_function(gillie, hunting, 'fishing expedition').
+
+Gilt
+%definition:  Covered thinly with gold lead or gold
+has_a(glit, 'gold leaf', 'gold paint').
+has_property(glit, thin, shape).
+
+Gimbal
+%definition: A device for keeping an instrument such as a compass or chronometer horizontal in a moving vessel or aircraft, typically consisting of rings pivoted at right angles.
+is_a(gimbal, device).
+has_function(gimbal, 'keeping an instrument', active).
+
+Gimcrack
+%definition: Showy but cheap or badly made
+is_a(gimcrack, showy).
+has_property(gimcrack, cheap, other).
+has_property(gimcrack, 'badly made', other).
+
+Gimlet
+%definition: A small T-shaped tool with a screw tip for boring
+is_a(gimlet, 'small T-shaped tool with a screw tip',passive).
+has_function(gimlet, boring, active).
+has_property(gimlet, small, volume).
+
+Gimmick
+%definition: A trick or device intended to attract attention, publicity, or trade
+is_a(gimmick, 'trick or device').
+has_function(gimmick, 'attract attention', active).
+has_function(gimmick, 'attract publicity', active).
+has_function(gimmick, 'attract trade', active).
+
+Gin
+%definition: A clear alcoholic spirit distilled from grain or malt and flavoured with juniper berries
+is_a(gin, 'clear alcoholic spirit').
+has_a(gin, 'grain or malt',passive).
+has_a(gin, 'flavoured with juniper berries',passive).
+
+Gingham
+%definition:  Lightweight plain-woven cotton cloth, typically checked in white and a bold colour.
+is_a(gingham, 'plain-woven cotton cloth').
+has_property(gingham, white, color).
+has_property(gingham, bold, color).
+has_affordance(gingham, lightweight, weight).
+
+Ginrandole
+%definition: A branched support for candles or other lights, which either stands on a surface or projects from a wall.
+is_a(ginrandole, 'branched support for candles or other lights').
+has_function(ginrandole, 'branched support for candles or other lights', active).
+has_property(ginrandole, 'stands on a surface', other).
+has_property(ginrandole, 'projects from a wall', other) .
+
+Girder
+%definition: A large iron or steel beam or compound structure used for building bridges and the framework of large buildings.
+is_a(girder, beam).
+has_a(girder, 'iron or steel or compound structure').
+has_function(girder, 'building bridges and the framework of large buildings',passive).
+has_affordance(girder, large, other).
+
+Girdle
+%definition: A belt or cord worn round the waist.
+is_a(girdle, 'belt or cord').
+has_function(girdle, 'worn around the waist', passive).
+
+Girth
+%definition: The measurement around the middle of something, especially a persons waist.
+is_a(girth, measurement).
+has_affordance(girth, 'measurement around idle of something especially a persons waist', other).
+
+Gittern
+%definition:  A lute- like medieval stringed instrument, forerunner of the guitar.
+is_a(gittern, 'stringed instrument').
+has_a(gittern, strings).
+
+Gizmo
+%definition: A gadget, especially one whose name the speaker does not know or cannot recall.
+is_a(gizmo, gadget).
+has_property(gizmo,'whose name the speaker does not know or cannot recall', other).
+
+Glacier
+%definition: A slowly moving mass or river of ice formed by the accumulation and compaction of snow on mountains or near the poles.
+is_a(glacier,water).
+has_a(glacier, snow).
+has_a(glacier, ice).
+has_property(glacier, frozen,state).
+has_affordance(glacier, compact, shape).
+has_affordance(glacier, slow,speed).
+
+Glass
+%definition: A hard, brittle substance, typically transparent or translucent, made by fusing sand with soda and lime and cooling rapidly. It is used to make windows, drinking containers, and other articles.
+has_a(glass, 'made by fusion sand with soda and lime and cooling rapidly',passive). 
+has_function(glass, 'to make windows', active).
+has_function(glass, 'to make drinking containers', active).
+has_function(glass, 'to make other articles', active).
+has_property(glass, hard, material).
+has_property(glass, brittle, material).
+has_property(glass, 'typically transparent or translucent', material).
+
+Glasses
+%definition: A pair of lenses set in a frame resting on the nose and ears, used to correct or assist defective eyesight.
+has_a(glasses, 'pair of lenses',passive).
+has_function(glasses, 'to correct or assist defective eyesight',active).
+
+Glasshouse
+%definition: A greenhouse
+is_a(glasshouse, greenhouse).
+
+Glassware
+%definition: Ornaments and articles made from glass.
+is_a(glassware, 'ornaments and articles',passive).
+has_a(glassware, glass).
+
+Glassworks
+%definition: A factory where glass and glass articles are made.
+is_a(glassworks, factory).
+has_function(factory, 'glass and glass articles are made', passive).
+
+Garden
+%definition:  A piece of ground adjoining a house, in which grass, flowers, and shrubs may be grown.
+is_a(garden,area).
+has_a(garden, grass).
+has_a(garden, flowers).
+has_a(garden, shrubs).
+has_a(garden,vegetation).
+
+Gap
+%definition:  A break or space in an object or between two objects.
+is_a(gap, space).
+has_a(gap,empty).
+has_a(gap, break).
+has_a(gap, cut).
+has_function(gap,space_difference,passive).
+has_property(gap,space,difference).
+has_affordance(gap, space, break).
+
+garb
+%definition:   Clothing, especially of a distinctive or special kind.
+is_a(garb,clothing).
+is_a(garb,garments).
+has_a(garb,dress).
+has_function(garb,dress,active).
+has_property(garb,outfit,material).
+has_affordance(garb,gm,weight).
+has_affordance(garb,cloth,textile).
+
+garbage
+%definition: Rubbish or waste, especially domestic refuse.
+is_a(garbage,trash).
+is_a(garbage,waste).
+has_a(garbage,bin).
+has_a(garbage,litter).
+has_function(garbage,waste,passive).
+has_property(garbage,waste,material).
+has_affordance(garbage,kg,weight).
+has_affordance(grabage,waste,material).
+
+garboard
+%definition: The first range of planks or plates laid on a ship's bottom next to the keel.
+is_a(garboard,plank).
+is_a(garboard, keel).
+has_a(garboard, metal).
+has_a(garboard,strake).
+has_function(garboard,ship_keel,active).
+
+garden
+%definition: A piece of ground adjoining a house, in which grass, flowers, and shrubs may be grown.
+is_a(garden, plot).
+has_affordance(garden,grounds,land).
+
+gargoyle
+%definition: A grotesque carved human or animal face or figure projecting from the gutter of a building, typically acting as a spout to carry water clear of a wall.
+is_a(gargoyle,spout).
+has_a(gargoyle, gutter).
+has_function(gargoyle,battlement,active).
+has_affordance(gargoyle,ugly,human).
+
+garibaldi
+
+Handlock
+%definition: A lockable metal ring used to secure the wrist of a prisoner to someone or something; a manacle, a handcuff; (in plural) a linked pair of these, used especially to secure a prisoner's wrists together.
+is_a(handlelock, 'metal ring').
+is_a(handlelock, manacle).
+is_a(handlelock, handcuff).
+has_function(handlelock, secure, 'prisoner wrist').
+has_a(handlelock, 'linked pair').
+
+Handloom
+%definition: A manually operated loom.
+is_a(handloom, loom).
+has_property(handloom, operated, manual).
+
+Handrail
+%definition: A rail fixed to posts or a wall for people to hold on to for support.
+is_a(handrail,support).
+has_affordance(handrail, posts, wall).
+
+Handsaw
+%definition: A wood saw worked by one hand.
+is_a(handsaw, wood).
+has_property(handsaw, works, 'one hand').
+
+Handset
+%definition: A mobile phone.
+is_a(handset, phone).
+is_a(handset, mobile).
+
+Handspike
+%definition: A wooden rod with an iron tip, used as a lever on board ship and by artillery soldiers.
+is_a(handspike, 'wooden rod'). 
+has_affordance(handspike, lever, ship). 
+has_a(handspike, 'iron tip',passive).
+
+Handstamp
+%definition: A small engraved block or rubber stamp for impressing a mark by hand, especially on a postage stamp.
+is_a(handstamp, 'rubber stamp').
+has_a(handstamp, mark).
+has_function(handstamp, mark,hand).
+
+Handwork
+%definition: Work done with the hands.
+is_a(handwork, work).
+has_function(handwork, done, hands).
+
+Hangar
+%definition: A large building with an extensive floor area, typically for housing aircraft.
+is_a(hangar, building).
+has_function(hangar, large, building).
+has_function(hangaer, extensive, floor).
+
+Hanger
+%definition:  A person who hangs something.
+has_function(hanger, hangs, something).
+
+Hank
+%definition: A coil or skein of wool, hair, or other material.
+is_a(hank, coil,skein). 
+has_a(hank, wool, hair).
+
+Hanky
+%definition: A handkerchief.
+is_a(hanky, handkerchief).
+
+Hansom
+%definition: A two-wheeled horse-drawn cab accommodating two inside, with the driver seated behind.
+is_a(hansom, cab).
+has_a(hansom, horse, seating).
+has_a(hansom, accomodation).
+
+Harbour
+%definition: A place on the coast where ships may moor in shelter, especially one protected from rough water by piers, jetties, and other artificial structures.
+is_a(harbour, shelter).
+has_property(harbour, moor, piers). 
+has_function(harbour, place, coast).
+
+Hardback
+%definition: (of a book) bound in stiff covers.
+has_property(hardback, stiff).
+has_function(hardback, investigate).
+has_function(hardback, bound, covers).
+is_a(hardback, book).
+
+Hardcover
+
+Brain
+%definition: An organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating centre of sensation and intellectual and nervous activity.
+is_a(brain,	organ).
+has_function(brain,	'coordinating center of sensation',	active).
+has_function(brian,	'coordinating center of intellectual',	active).
+has_function(brain,	'coordinating center of nervous activity',	active).
+has_property(brian, tissue,	material).
+has_affordance(brian,soft,texture).
+
+Buffalo
+%definition: A heavily built wild ox with backswept horns, found mainly in the Old World tropics.
+is_a(buffalo,ox).
+has_a(buffalo, horns).
+has_property(buffalo,'backswpt horns',shape).
+has_affordance(buffalo,heavy,weight).
+
+Bird
+%definition:  A warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly.
+is_a(bird,	warm_blooded).
+is_a(bird,	egg-laying).
+is_a(bird,  vertrbrate).
+is_a(bird,	animal).
+has_a(bird,	feathers).
+has_a(bird,	wings).
+has_a(bird,	beak).
+
+Baby
+%definition: A very young child.
+is_a(baby,child).
+has_property(baby,young,other).
+
+Book
+%definition: A written or printed work consisting of pages glued or sewn together along one side and bound in covers.
+is_a(book,'written or printed work bound in covers').
+has_a(book, pages, active).
+has_a(book,	glue,active).
+has_a(book,	sewn,active).
+has_affordance(book, pages,weight).
+has_affordance(book, pages, volume).
+
+Back
+%definition: The rear surface of the human body from the shoulders to the hips.
+is_a(back,human-body).
+has_a(back,surface).
+
+Butter
+%definition:  A pale yellow edible fatty substance made by churning cream and used as a spread or in cooking.
+is_a(butter, substance).
+has_function(butter,spread,	active).
+has_function(butter,cooking,active).
+has_property(butter,yellow,	color).
+has_property(butter,pale,color).
+has_affordance(butter,fatty,texture).
+
+Bulb
+%definition: A rounded underground storage organ present in some plants, notably those of the lily family, consisting of a short stem surrounded by fleshy scale leaves or leaf bases, lying dormant over winter.
+is_a(bulb,organ).
+is_a(bulb,lily-family).
+has_a(bulb, short-stem).
+has_function(bulb,underground-storage-organ,passive).
+has_property(bulb,round,shape).
+
+Bat
+%definition:  An implement with a handle and a solid surface, typically of wood, used for hitting the ball in games such as cricket, baseball, and table tennis.
+is_a(bat,wood).
+has_a(bat,handle).
+has_a(bat, solid-surface).
+has_function(bat,games,active).
+has_function(bat,cricket,active).
+has_function(bat,base-ball,active).
+has_function(bat,table-tennis,active).
+has_function(bat,sitting,active).
+
+Bank
+%definition: The land alongside or sloping down to a river or lake.
+is_a(bank,land).
+
+Bag
+%definition: A flexible container with an opening at the top, used for carrying things.
+is_a(bag,container).
+has_a(bag, opening-at-the-top).
+has_function(bag,carrying,active).
+has_affordance(bag,things,weight).
+
+Bra
+%definition: An undergarment worn by women to support the breasts.
+is_a(bra,undergarment).
+has_function(bra,worn,active).
+
+Boots
+%definition: A person employed in a hotel to clean boots and shoes, carry luggage, and perform other menial tasks.
+is_a(boots,	person).
+has_function(boots,	clean,active).
+has_function(boots,	carry,active).
+has_function(boots,	perform,active).
+
+Blazer
+%definition: A coloured jacket worn by schoolchildren or sports players as part of a uniform.
+is_a(blazer,jacket).
+has_function(blazer,worn,active).
+has_function(blazer,uniform,active).
+has_property(blazer, coloured,color).
+
+Bikini
+%definition: A two-piece swimming costume for women.
+is_a(bikini,costume).
+has_function(bikini,swimming,active).
+
+Bookcase
+%definition: An open cabinet containing shelves on which to keep books.
+is_a(bookcase,cabinet).
+has_a(bookcase,shelves).
+has_function(bookcase,keep,	active).
+
+Brass
+%definition: A yellow alloy of copper and zinc.
+is_a(brass,alloy).
+has_a(brass,copper).
+has_a(brass, zinc).
+has_property(brass,copper,material).
+has_property(brass,zinc,material).
+
+Brother
+%definition:  A man or boy in relation to other sons and daughters of his parents.
+is_a(brother,man).
+is_a(brother,boy).
+has_function(brother,relation,active).
+
+Boy
+%definition: A male child or youth.
+is_a(boy,male).
+is_a(boy,child).
+is_a(boy,youth).
+
+Blender
+%definition:  A person or thing that mixes things together, in particular an electric mixing machine used in food preparation for liquidizing, chopping, or pureeing.
+is_a(blender,person).
+is_a(blender,thing).
+is_a(blender,machine).
+has_function(blender,mixes,active).
+has_function(blender,'preparation',active).
+has_function(blender,chopping,active).
+has_function(blender,pureeing,active).
+
+Block
+%definitiom: A large solid piece of hard material, especially rock, stone, or wood, typically with flat surfaces on each side.
+is_a(block,material).
+has_a(block,rock).
+has_a(block,wood).
+has_a(block,stone).
+has_property(lock,flat,shape).
+has_property(block,'each side',other).
+has_affordance(block,large,volume).
+has_affordance(block,hard,weight).
+
+Board
+%definition: A long, thin, flat piece of wood or other hard material, used for floors or other building purposes.
+is_a(board,material).
+has_a(board,wood).
+has_function(board,floors,passive).
+has_function(board,building,passive).
+has_property(board,long,shape).
+has_property(board,thin,shape).
+has_property(board,flat,shape).
+has_affordance(board,hard,weight).
+
+Ballpoint
+%defintion: A pen with a tiny ball as its writing point, especially one using stiffer ink than a rollerball.
+is_a(ballpoint,instrument).
+has_function(ballpoint,writing,active).
+has_property(ballpoint,'lstiffer inkl',material).
+has_a(ballpoint,ball).
+has_affordance(ballpoint,tiny,volume).
+
+Beaker
+%defintion: A drinking container, typically made of plastic, often with a lid for use by children.
+is_a(beaker,tools).
+has_function(beaker,contain,passive).
+has_a(beaker,plastic).
+has_a(beaker,lid).
+
+Binder
+%defintion: A cover for holding magazines or loose sheets of paper together.
+is_a(binder,tools).
+has_function(binder,holding,active).
+has_a(binder,cover).
+
+Bingo
+%defintion: A game in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.
+is_a(bingo, game).
+has_a(bingo, numbers).
+has_function(bingo, randomly, passive).
+
+Blackfly
+%definition: A black or dark green aphid which is a common pest of crops and gardens.
+is_a(blackfly, aphid).
+has_a(blackfly, pest).
+has_property(blackfly, 'dark green', color).
+has_property(blackfly, black, color).
+
+Boat
+%definition: A small vessel for travelling over water, propelled by oars, sails, or an engine.
+is_a(boat, vessel).
+has_a(boat, sail).
+has_a(boat, engine).
+has_a(boat, oar).
+has_function(boat, travelling).
+has_property(boat, propelling).
+
+Bow
+%definition: A knot tied with two loops and two loose ends, used especially for tying shoelaces and decorative ribbons.
+is_a(bow, knot).
+has_a(bow, loop).
+has_a(bow, 'loose ends',passive).
+has_function(bow, tying).
+
+Bowl
+
+Broccoli
+%definition: A cultivated variety of cabbage bearing heads of green or purplish flower buds that are eaten as a vegetable.
+is_a(broccoli, 'cultivated variety of cabbage').
+has_a(broccoli, 'flower buds').
+has_property(broccoli, green, color).
+has_property(broccoli, purple, color).
+has_function(broccoli, eating).
+has_property(broccoli, vegetable).
+
+Broom
+%definition: A long-handled brush of bristles or twigs, used for sweeping.
+is_a(broom,  'handled brush').
+has_a(broom, bristles).
+has_a(broom, twigs).
+has_function(broom, sweeping).
+has_property(broom, long, shape).
+
+Bullfrog
+%definition: A very large frog which has a deep booming croak and is often a predator of smaller vertebrates.
+is_a(bullfrog, frog).
+is_a(bullfrog, predator).
+has_a(bullfrog, 'deep booming croak').
+has_property(bullfrog, 'very large').
+
+Butterfly
+%definition: A nectar-feeding insect with two pairs of large, typically brightly coloured wings that are covered with microscopic scales. Butterflies are distinguished from moths by having clubbed or dilated antennae, holding their wings erect when at rest, and being active by day.
+is_a(butterfly, insect).
+has_property(butterfly, nectar-feeding).
+has_a(butterfly, wings).
+has_property(butterfly, bright, color).
+has_affordance(butterfly, scales, texture).
+has_a(butterfly, antenna).
+has_property(butterfly, dilated, shape).
+
+Buttermilk
+%definition: The slightly sour liquid left after butter has been churned, used in baking or consumed as a drink.
+is_a(buttermilk, liquid).
+has_property(buttermilk, 'slightly sour', taste).
+has_function(buttermilk, baking).
+has_function(buttermilk, consuming).
+is_a(buttermilk, drink).
+
+Backstage
+%definition: In or to the area behind the stage in a theatre, especially the wings or dressing rooms.
+is_a(backstage, room).
+has_property(backstage, area).
+
+Baggage
+%definition: Suitcases and bags c.ontaining personal belongings packed for travelling; luggage.
+is_a(baggage, suitcase).
+is_a(baggage, bag).
+is_a(baggage, luggage).
+has_a(baggage, 'personal belongings',passive).
+has_function(baggage, travelling).
+
+Balm
+%definition: A fragrant cream or liquid used to heal or soothe the skin.
+is_a(balm, cream).
+is_a(balm, liquid).
+has_function(balm, heal, skin).
+has_function(balm, soothe, skin).
+
+Balmoral
+%definition: A round brimless hat with a cockade or ribbons attached, worn by certain Scottish regiments.
+is_a(balmoral, hat).
+has_property(balmoral, round, shape).
+has_affordance(balmoral, brimless, texture).
+has_a(balmoral, cockade).
+has_a(balmoral, ribbons).
+has_function(balmoral, wearing, 'Scottish regiments').
+
+Bareboat
+%definition: Relating to or denoting a boat or ship hired without a crew.
+is_a(bareboat, boat).
+is_a(bareboat, ship).
+has_function(bareboat, travelling).
+has_function(bareboat, hiring, 'no crew').
+
+Barge
+%definition: A long flat-bottomed boat for carrying freight on canals and rivers, either under its own power or towed by another.
+is_a(barge, boat).
+has_property(barge, long, shape).
+has_property(barge, klat-bottomed, shape).
+has_function(barge, carrying, freight).
+has_a(barge, power).
+
+Batik
+%definition:  A method (originally used in Java) of producing colored designs on textiles by dyeing them, having first applied wax to the parts to be left undyed.
+is_a(batik, method).
+has_function(batik, producing, 'colored design').
+has_function(batik, dyeing, textiles).
+
+Batiste
+%definition: A fine, light linen or cotton fabric resembling cambric.
+is_a(batiste, 'light linen').
+is_a(batiste, 'cotton fabric').
+has_affordance(batiste, fine, texture).
+
+Beret
+%definition:  A round flattish cap of felt or cloth.
+is_a(beret, cap).
+has_property(beret, round, shape).
+has_property(beret, flat, shape).
+has_a(beret, felt).
+has_a(beret, cloth).
+
+Berg
+%definition: A mountain or hill.
+is_a(berg, mountain).
+is_a(berg, hill).
+
+Remote
+%definition: (of a place) situated far from the main centres of population; distant. 
+is_a(remote,place). 
+has_property(remote, 'situated far',passive).                                   
+
+Restaurant
+%definition: A place where people pay to sit and eat meals that are cooked and served on the premises. 
+is_a(restaurant,place). 
+has_function(restaurant,'pay to sit and eat meals',active). 
+has_function(restaurant,'cooked and served',active). 
+
+Road
+%definition: A wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use. 
+is_a(road, 'A wide way').
+has_function(road, 'leading from one place to another',active).
+has_function(road, 'vehicles can use',active).
+
+Ruler
+%defintion: A person exercising government or dominion
+is_a(ruler,person).
+has_function(ruler, 'exercising government', active).
+has_function(ruler, 'exercising dominion', active).
+
+Raindrop
+%definition: A single drop of rain.
+is_a(raindrop, 'drop of rain').
+has_affordance(raindrop, 'single drop', volume).
+
+River
+%definition: A large natural stream of water flowing in a channel to the sea, a lake, or another river.
+is_a(river, 'natural stream').
+has_a(river, water).
+has_function(river, 'flowing to sea', active).
+has_function(river, 'flowing to lake', active).
+has_function(river, 'flowing to river', active).
+has_property(river, water, material).
+has_affordance(river, large, size).
+
+Rope
+%definition: A length of thick strong cord made by twisting together strands of hemp, sisal, nylon, or similar material.
+is_a(rope, 'strong cord').
+has_a(rope, 'twisted strands').
+has_property(rope, nylon, material).
+has_property(rope, hemp, material).
+has_property(rope, sisal, material).
+has_affordance(rope, light, weight).
+
+fork
+%definition: An implement with two or more prongs used for lifting food to the mouth or holding it when cutting.
+is_a(fork, implement ).
+has_property(fork, prongs).
+has_function(fork, lifting).
+has_function(fork, holding).
+has_function(fork, cutting).
+
+Flask
+%defintion: A container for liquids
+is_a(flask, container).
+has_a(flask, liquids).
+
+Funnel
+%defintion: A tube or pipe that is wide at the top and narrow at the bottom, used for guiding liquid or powder into a small opening.
+is_a(funnel,instrument).
+has_function(funnel,'guiding liquid',active).
+has_function(funnel,'guiding powder',active).
+has_property(funnel,'narrow bottom',shape).
+has_property(funnel,'wide top',shape).
+has_a(funnel,tube).
+has_a(funnel,pipe).
+has_affordance(funnel,small,volume).
+
+Finger
+%definition: Each of the four slender jointed parts attached to either hand (or five, if the thumb is included).
+is_a (finger, slender).
+has_function (finger, thumb).
+has_property (finger, print, 'either hand').
+
+Fox
+%definition: A carnivorous mammal of the dog family with a pointed muzzle and bushy tail, proverbial for its cunning.
+is_a(fox, animal).
+has_property(fox, dog, muzzle).
+has_function(fox, proverbial, 'bushy tail').
+
+Frock
+%definition:  A woman's or girl's dress.
+is_a(frock, women).
+has_property(frock, dress).
+
+Frog
+%definition: A tailless amphibian with a short squat body, moist smooth skin, and very long hind legs for leaping.
+has_property (frog, amphibian).
+is_a(frog,'squat body').
+has_function(frog, leaping).
+
+Fan
+%definition: An apparatus with rotating blades that creates a current of air for cooling or ventilation.
+is_a(fan, air).
+has_property(fan, cooling, ventilation).
+has_function(fan, rotate).
+
+Freezer
+%definition: A refrigerated cabinet or room for preserving food at very low temperatures.
+is_a(freezer, cabinet, room).
+has_function(freezer, 'food preserve').
+has_property(freezer, temperature).
+
+Fish
+%definition:  A limbless cold-blooded vertebrate animal with gills and fins living wholly in water.
+has_property(fish, 'cold-blooded').
+has_function(fish, gills, fins).
+is_a(fish, 'wholly water').
+
+Film
+%definition: A thin flexible strip of plastic or other material coated with light-sensitive emulsion for exposure in a camera, used to produce photographs or motion pictures.
+has_property(film, flexible, plastic).
+has_function(film, camera, motion).
+has_a(film, produce, emulsion).
+
+Foot
+%definition: The lower extremity of the leg below the ankle, on which a person stands or walks.
+is_a(foot, lower).
+has_function(foot, ankle, person).
+has_property(foot, walks, leg).
+
+Flag
+%definition: A piece of cloth or similar material, typically oblong or square, attachable by one edge to a pole or rope and used as the symbol or emblem of a country or institution or as a decoration during public festivities.
+has_a(flag, square, attachable).
+has_property(flag, country, emblem).
+has_function(flag, public, festival).
+
+Factory
+%definition: A building or group of buildings where goods are manufactured or assembled chiefly by machine.
+has_a(factory, group).
+has_function(factory, machine, goods).
+has_property(factory, machine).
+is_a(factory, assemble).
+
+Father
+%definition:  A man in relation to his child or children.
+has_function(father, relation).
+has_property(father, children).
+is_a(father, man).
+
+Farm
+%definition: An area of land and its buildings, used for growing crops and rearing animals.
+has_function(farm, area, land).
+has_property(farm, build).
+is_a(farm, crop, rear).
+has_a(farm, animal).
+
+Forest
+%definition:  A large area covered chiefly with trees and undergrowth.
+is_a(forest,area).
+has_a(forest, trees).
+has_a(forest, undergrowth).
+has_a(forest,vegetation).
+
+Flowers
+%definition: The seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are typically surrounded by a brightly colored corolla (petals) and a green calyx (sepals).
+is_a(flowers, plant).
+has_function(flowers, stamens, carpels).
+has_property(flowers, 'green calyx', corolla).
+
+Fruit
+%definition: The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food.
+has_function(fruit, seed).
+is_a(fruit, food, eat).
+has_property(fruit, seed, plant).
+
+Fork
+%definition: An implement with two or more prongs used for lifting food to the mouth or holding it when cutting.
+has_function(fork, prongs).
+has_a(fork, food, mouth).
+is_a(fork, hold).
+
+Firecracker
+%definition: A loud, explosive firework; a banger.
+is_a(firecracker,firework).
+has_property(firecracker, loud, sound).
+has_affordance(firecracker, explosive, stable).
+
+Wheat
+%definition: A cereal which is the most important kind grown in temperate countries, the grain of which is ground to make flour for bread, pasta, pastry, etc.
+is_a(wheat, cereal).
+has_function(wheat, 'to make', flour).
+
+Window
+%definition: An opening in the wall or roof of a building or vehicle, fitted with glass in a frame to admit light or air and allow people to see out.
+is_a(window, opening).
+has_a(window, glass).
+has_a(window, frame).
+has_function(window, allow, 'light or air').
+
+Winter
+%definition:  The coldest season of the year, in the northern hemisphere from December to February and in the southern hemisphere from June to August.
+is_a(winter, season).
+
+Wood
+%definition: The hard fibrous material that forms the main substance of the trunk or branches of a tree or shrub, used for fuel or timber.
+is_a(wood, 'hard fibrous material').
+has_function(wood, 'used for', fuel).
+has_function(wood, 'used for', timber).
+
+Ocean
+%definition: A very large expanse of sea, in particular each of the main areas. into which the sea is divided geographicaly
+is_a(ocean, 'large sea').
+has_a(ocean, water).
+
+Ostrich
+%definition: A flight less swift-runnil long neck, long on each foot. African birn legs, and twor It is the with males up to with toes largest living bird, reaching height
+is_a(ostrich, bird).
+has_property(ostrich,'long neck',longlegs).
+is_a(ostrich, 'largest bird',passive).
+
+Oil
+%definition: A viscous liquid derived from petroleum, especially for use as a fuel or lubricant.
+is_a(oil,liquid).
+has_a(oil,petroleum).
+has_function(oil,fuel,active).
+has_function(oil,lubricant,active).
+has_affordance(oil,viscous,texture).
+
+Orange
+%definition:  A large round juicy citrus fruit with a tough bright reddish-yellow rind.
+is_a(orange,fruit).
+has_property(orange,large,other).
+has_property(orange,round,shape).
+has_property(orange,juicy,material).
+has_a(orange,citrus).
+has_a(orange, rind).
+has_property(orange,reddish-yellow,color).
+
+Onion
+%definition: A swollen edible bulb used as a vegetable, having a pungent taste and smell and composed of several concentric layers.
+is_a(onion,bulb).
+has_function(onion,vegetable,onion).
+has_property(onion,swollen,shape).
+has_property(onion,edible,other).
+has_property(onion,pungent,taste).
+has_property(onion,pungent,smell).
+has_a(onion,'concentric layers').
+
+Oven
+%definition: An enclosed compartment, usually part of a cooker, for cooking and heating food.
+is_a(oven,compartment).
+has_function(oven,cooking,active).
+has_function(oven,heating,active).
+has_property(oven,enclosed,other).
+has_a(oven,cooker).
+
+Owl
+%definition: A nocturnal bird of prey with large eyes, a facial disc, a hooked beak, and typically a loud hooting call.
+is_a(owl,bird).
+has_property(owl,nocturnal).
+has_property(owl,'large eyes',passive).
+has_property(owl,'facial disc',passive).
+has_property(owl,'hooked beak',passive).
+has_property(owl,nocturnal,other).
+has_affordance(owl,'loud hooting call',other).
+
+Elephant
+%definition: A very large plant-eating mammal with a prehensile trunk, long curved ivory tusks, and large ears, native to Africa and southern Asia. It is the largest living landanimal."
+is_a(elephant, 'plant eating mammal').
+is_a(elephant, 'largest living land animal',passive).
+has_a(elephant, 'prehensile trunk').
+has_a(elephant, 'ivory tusks',passive).
+has_property(elephant, 'very large', size).
+
+EGG
+%definition: An oval or round object laid by a female bird, reptile, fish, or invertebrate, usually containing a developing embryo. The eggs of birds are enclosed in a chalky shell, while those of reptiles are in a leathery membrane.
+is_a(egg, object).
+has_a(egg, 'developing embryo').
+has_property(egg, round, shape).
+has_property(egg, oval, shape).
+has_property(egg, 'chalky shell', structure).
+has_affordance(egg, 'laid by', reptile).
+has_affordance(egg, 'laid by', invertibrate).
+
+Earthworm
+%definition: A burrowing annelid worm that lives in the soil, important in aerating and draining the soil and in burying organic matter.
+is_a(earthworm,worm).
+has_function(earthworm, aerating,active).
+
+yarmulke
+%definition:  A skullcap worn in public by Orthodox Jewish men or during prayer by other Jewish men.
+is_a(yarmulke,skullcap).
+has_function(yarmulke,worn,active).
+

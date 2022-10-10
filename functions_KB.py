@@ -81,25 +81,25 @@ def append_choice(element, list):
 
 
 def split_kb(ordered, key_list):
-    dictionary = open("dictionary_1", "w")
+    dictionary = open("dicts/dictionary_1", "w")
     for i in range(0, 199):
         dictionary.write(key_list[i])
         dictionary.write("\n")
         dictionary.write(ordered[key_list[i]])
         dictionary.write("\n")
-    dictionary = open("dictionary_2", "w")
+    dictionary = open("dicts/dictionary_2", "w")
     for i in range(200, 399):
         dictionary.write(key_list[i])
         dictionary.write("\n")
         dictionary.write(ordered[key_list[i]])
         dictionary.write("\n")
-    dictionary = open("dictionary_3", "w")
+    dictionary = open("dicts/dictionary_3", "w")
     for i in range(400, 599):
         dictionary.write(key_list[i])
         dictionary.write("\n")
         dictionary.write(ordered[key_list[i]])
         dictionary.write("\n")
-    dictionary = open("dictionary_4", "w")
+    dictionary = open("dicts/dictionary_4", "w")
     for i in range(600, 671):
         dictionary.write(key_list[i])
         dictionary.write("\n")

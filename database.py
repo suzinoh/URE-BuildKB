@@ -254,7 +254,7 @@ def query_object_affordance(word, affordance):
 def inserting_linked_affordance():
     replace = ["has_affordance", "has_", "has_function", ".", "'", "\n"]
     #steps: read each line by line get the object number and affordance number
-    f = open("dictionary_1_perf_2022-09-07_temp2022-09-15", "r")
+    f = open("dicts/dictionary_1_perf_2022-09-07_temp2022-09-15", "r")
     lines = f.readlines()
     word, affordance = "", ""
     for each_line in lines:
