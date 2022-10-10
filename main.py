@@ -4,7 +4,7 @@ import os
 import database
 import functions_KB as functions_KB
 import database as db
-
+import inferrence
 # from data_structure import ObjectNode
 
 directory = 'C:/Users/suzin/OneDrive/Documents/WSU/Research/KnolwedgeBase'
@@ -68,7 +68,7 @@ dict_list = ["dictionary_1_perf_2022-09-07_temp2022-09-15", "dictionary_2_perf_2
 #TODO: onhold, 09212022 for the linking part :<
 # database.inserting_linked_affordance()
 
-database.relation_insert("dictionary_4_perf_2022-09-13_temp2022-09-21_phy_2022-09-27")
+#database.relation_insert("dictionary_4_perf_2022-09-13_temp2022-09-21_phy_2022-09-27")
 # adding to the database: commented ones are already done
 # TODO: get object in and relations in. (needs perf)
 # db.add_category(functions_KB.po["category"])
@@ -76,3 +76,5 @@ database.relation_insert("dictionary_4_perf_2022-09-13_temp2022-09-21_phy_2022-0
 # db.add_physical(functions_KB.po["property"])
 # database.add_object()
 # combine them into one file instead of separate files
+
+inferrence.create_rule_book()
