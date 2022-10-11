@@ -51,7 +51,18 @@ def create_rule_book():
         each_tuple = (items[0], items[1])
         affordance_list.append(each_tuple)
     for items in affordance_list:
-        query = f"SELECT "
+        object_list = create_get_object(str(items[1]), "affordance")
+        if len(object_list) > 0:
+            for each_id in object_list:
+                object_id = str(each_id)
+                query = "SELECT * FROM summary WHERE object_id = " + object_id + " AND affordance_label = 'null'"
+                cur.execute(query)
+                testing = cur.fetchall()
+                if len(testing) > 0:
+                    create_DictLine(items, testing)
+                    #creating the line to insert in Rule Book
+
+
     #case 2 : category
     category_list = []
     query = "SELECT category_label, category_id FROM category"
@@ -71,6 +82,22 @@ def create_rule_book():
         physical_list.append(each_tuple)
 
 
+
+def create_DictLine(original, related, kind):
+    """return the string for the dictionary insertion
+        <label>___<id>/features: c___<sample1>___<id1>, p___<sample2>___<id2>, ... continues if more
+    """
+    features = []
+    if kind == "affordance":
+        """when affordance, we are extracting category and physical"""
+        dict_line = original[0] + "___" + str(original[1]) + "/features: "
+        for each_result in related:
+            new_pair = (each_result[1], str(each_result[11]), "c")
+            features.append(new_pair)
+            new_pair = (each_result[2], str(each_result[8]), "p")
+            features.append(new_pair)
+
+
 def create_get_object(id, kind):
     """purpose of the function is to return the list of objects that are applicable
     returns the list of object_id associated with the attribute
@@ -79,16 +106,16 @@ def create_get_object(id, kind):
      case 3: physical perspective
      """
     object_list = []
-    if kind is "affordance":
+    if kind == "affordance":
         query = "SELECT relation.object_id FROM relation WHERE relation.affordance_id =" + id
         cur.execute(query)
         object_acquired = cur.fetchall()
         for items in object_acquired:
             object_list.append(items[0])
         return object_list
-    elif kind is "category":
+    elif kind == "category":
         query = "SELECT relation.object_id FROM relation WHERE relation.affordance_id =" + id
-    elif kind is "physical":
+    elif kind == "physical":
         query = "SELECT relation.object_id FROM relation WHERE relation.physical_id =" + id
         cur.execute(query)
         object_acquired = cur.fetchall()
