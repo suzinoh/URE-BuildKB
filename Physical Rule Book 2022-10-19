@@ -1,0 +1,226 @@
+solid___1
+/features: a___null.10000___2, c___object.17___1, c___structure.4___1, 
+sphere___4
+/features: a___null.10000___3, c___food.0___2, c___object.17___1, 
+cube___5
+/features: a___null.10000___1, c___place.2___1, 
+cylinder___6
+/features: a___null.10000___10, c___instrument.12___4, c___object.17___3, c___structure.4___2, c___tool.1___1, 
+cone___7
+/features: a___null.10000___3, c___object.17___1, c___animal.13___1, c___place.2___1, 
+cuboid___8
+/features: a___null.10000___1, c___device.3___1, 
+hollow___9
+/features: a___null.10000___2, c___object.17___1, c___bodypart.9___1, 
+bowl___10
+/features: a___null.10000___4, c___instrument.12___4, 
+round___11
+/features: a___null.10000___15, c___structure.4___2, c___place.2___1, c___property.15___1, c___object.17___2, c___device.3___3, c___term.6___1, c___instrument.12___1, c___food.0___1, c___bodypart.9___1, c___garment.8___2, 
+concaved___13
+/features: a___null.10000___2, c___device.3___1, c___material.7___1, 
+convexed___14
+/features: a___null.10000___2, c___garment.8___1, c___food.0___1, 
+long___15
+/features: a___null.10000___4, c___garment.8___1, c___material.7___1, c___tool.1___1, c___vehicle.10___1, 
+thin-rod___16
+/features: a___null.10000___4, c___food.0___4, 
+thick-rod___17
+/features: a___null.10000___1, c___instrument.12___1, 
+white___19
+/features: a___null.10000___10, c___object.17___3, c___plant.5___1, c___device.3___1, c___bodypart.9___2, c___animal.13___1, c___garment.8___1, c___property.15___1, 
+black___20
+/features: a___null.10000___8, c___device.3___2, c___material.7___1, c___animal.13___1, c___term.6___1, c___object.17___1, c___insect.14___2, 
+yellow___21
+/features: a___null.10000___6, c___food.0___4, c___device.3___1, c___insect.14___1, 
+red___22
+/features: a___null.10000___3, c___term.6___1, c___food.0___1, c___object.17___1, 
+blue___23
+/features: a___null.10000___4, c___animal.13___4, 
+green___24
+/features: a___null.10000___9, c___animal.13___4, c___term.6___1, c___food.0___3, c___insect.14___1, 
+clear___25
+/features: a___null.10000___1, c___property.15___1, 
+purple___26
+/features: a___null.10000___1, c___food.0___1, 
+pink___27
+/features: a___null.10000___2, c___plant.5___1, c___object.17___1, 
+brown___28
+/features: a___null.10000___9, c___material.7___2, c___structure.4___1, c___animal.13___1, c___food.0___1, c___tool.1___1, c___object.17___1, c___device.3___1, c___insect.14___1, 
+grey___30
+/features: a___null.10000___7, c___animal.13___5, c___place.2___1, c___object.17___1, 
+wood___32
+/features: a___null.10000___16, c___instrument.12___5, c___furniture.11___1, c___object.17___7, c___structure.4___2, c___vehicle.10___1, 
+glass___33
+/features: a___null.10000___3, c___garment.8___1, c___device.3___1, c___title.18___1, 
+plastic___34
+/features: a___null.10000___2, c___object.17___1, c___tool.1___1, 
+ceramic___35
+/features: a___null.10000___4, c___object.17___4, 
+paper___36
+/features: a___null.10000___1, c___object.17___1, 
+steel___37
+/features: a___null.10000___5, c___device.3___2, c___garment.8___1, c___vehicle.10___1, c___action.16___1, 
+cardboard___38
+/features: a___null.10000___1, c___object.17___1, 
+brass___39
+/features: a___null.10000___9, c___instrument.12___4, c___device.3___1, c___tool.1___4, 
+fabric___40
+/features: a___null.10000___4, c___garment.8___3, c___material.7___1, 
+stone___42
+/features: a___null.10000___4, c___material.7___1, c___action.16___1, c___device.3___1, c___place.2___1, 
+leather___43
+/features: a___null.10000___2, c___garment.8___1, c___structure.4___1, 
+cotton___44
+/features: a___null.10000___3, c___furniture.11___1, c___garment.8___1, c___material.7___1, 
+metal___45
+/features: a___null.10000___21, c___tool.1___6, c___structure.4___3, c___object.17___7, c___vehicle.10___2, c___action.16___1, c___instrument.12___1, c___device.3___1, 
+light___47
+/features: a___null.10000___1, c___insect.14___1, 
+heavy___49
+/features: a___null.10000___1, c___animal.13___1, 
+soft___51
+/features: a___null.10000___1, c___food.0___1, 
+smooth___63
+/features: a___null.10000___2, c___bodypart.9___1, c___garment.8___1, 
+wet___65
+/features: a___null.10000___1, c___material.7___1, 
+wool___68
+/features: a___null.10000___2, c___garment.8___2, 
+tall___69
+/features: a___null.10000___1, c___structure.4___1, 
+nylon___70
+/features: a___null.10000___2, c___garment.8___1, c___tool.1___1, 
+seed-studded surface___71
+/features: a___null.10000___1, c___food.0___1, 
+wheat flour___72
+/features: a___null.10000___1, c___food.0___1, 
+talc___74
+/features: a___null.10000___1, c___structure.4___1, 
+fluorescent___75
+/features: a___null.10000___1, c___instrument.12___1, 
+transparent___76
+/features: a___null.10000___1, c___instrument.12___1, 
+small___77
+/features: a___null.10000___1, c___object.17___1, 
+rectangular___78
+/features: a___null.10000___1, c___instrument.12___1, 
+centre___79
+/features: a___null.10000___2, c___property.15___1, c___material.7___1, 
+slope___80
+/features: a___null.10000___1, c___action.16___1, 
+spring-loaded___81
+/features: a___null.10000___4, c___device.3___4, 
+concrete___82
+/features: a___null.10000___1, c___garment.8___1, 
+copper___83
+/features: a___null.10000___3, c___term.6___1, c___device.3___1, c___material.7___1, 
+ship___84
+/features: a___null.10000___1, c___structure.4___1, 
+right angles___85
+/features: a___null.10000___1, c___place.2___1, 
+tabacco___86
+/features: a___null.10000___1, c___title.18___1, 
+hexagon___87
+/features: a___null.10000___1, c___structure.4___1, 
+square___88
+/features: a___null.10000___1, c___structure.4___1, 
+thread___89
+/features: a___null.10000___1, c___animal.13___1, 
+semi-sphere___90
+/features: a___null.10000___1, c___vehicle.10___1, 
+gems___91
+/features: a___null.10000___1, c___object.17___1, 
+threefold___92
+/features: a___null.10000___1, c___plant.5___1, 
+chemicals___93
+/features: a___null.10000___1, c___device.3___1, 
+graph___94
+/features: a___null.10000___1, c___term.6___1, 
+horizontal___95
+/features: a___null.10000___1, c___device.3___1, 
+polished metal___96
+/features: a___null.10000___1, c___tool.1___1, 
+oval___97
+/features: a___null.10000___2, c___bodypart.9___1, c___object.17___1, 
+flat___98
+/features: a___null.10000___8, c___garment.8___2, c___animal.13___1, c___instrument.12___4, c___material.7___1, 
+triangular___99
+/features: a___null.10000___1, c___object.17___1, 
+lens round and rectangular shape___100
+/features: a___null.10000___1, c___object.17___1, 
+thin sheet of transparent flexible material___101
+/features: a___null.10000___1, c___instrument.12___1, 
+vivid___104
+/features: a___null.10000___1, c___animal.13___1, 
+straight___105
+/features: a___null.10000___1, c___property.15___1, 
+eye-like markings___106
+/features: a___null.10000___1, c___animal.13___1, 
+erected___107
+/features: a___null.10000___1, c___animal.13___1, 
+fanned out___108
+/features: a___null.10000___1, c___animal.13___1, 
+sparse___110
+/features: a___null.10000___1, c___animal.13___1, 
+burst open___111
+/features: a___null.10000___1, c___food.0___1, 
+semicircle___112
+/features: a___null.10000___4, c___instrument.12___4, 
+heart___114
+/features: a___null.10000___1, c___term.6___1, 
+diamond___115
+/features: a___null.10000___2, c___term.6___1, c___property.15___1, 
+leaf___116
+/features: a___null.10000___1, c___term.6___1, 
+spades ___117
+/features: a___null.10000___1, c___term.6___1, 
+iron___118
+/features: a___null.10000___4, c___object.17___4, 
+clay___119
+/features: a___null.10000___4, c___object.17___4, 
+bulb___120
+/features: a___null.10000___1, c___object.17___1, 
+rubber___121
+/features: a___null.10000___2, c___object.17___2, 
+lithium___122
+/features: a___null.10000___1, c___material.7___1, 
+silver___127
+/features: a___null.10000___1, c___tool.1___1, 
+cleft___130
+/features: a___null.10000___1, c___material.7___1, 
+waste___133
+/features: a___null.10000___1, c___object.17___1, 
+tissue___134
+/features: a___null.10000___1, c___bodypart.9___1, 
+backswpt horns___135
+/features: a___null.10000___1, c___animal.13___1, 
+zinc___137
+/features: a___null.10000___1, c___material.7___1, 
+thin___138
+/features: a___null.10000___1, c___material.7___1, 
+stiffer ink___140
+/features: a___null.10000___1, c___instrument.12___1, 
+flat-bottomed___141
+/features: a___null.10000___1, c___vehicle.10___1, 
+water___143
+/features: a___null.10000___2, c___structure.4___1, c___action.16___1, 
+hemp___145
+/features: a___null.10000___1, c___tool.1___1, 
+sisal___146
+/features: a___null.10000___1, c___tool.1___1, 
+narrow bottom___147
+/features: a___null.10000___1, c___instrument.12___1, 
+wide top___148
+/features: a___null.10000___1, c___instrument.12___1, 
+moulding___151
+/features: a___null.10000___1, c___material.7___1, 
+curve fin___152
+/features: a___null.10000___1, c___animal.13___1, 
+barrel___153
+/features: a___null.10000___1, c___instrument.12___1, 
+upright___154
+/features: a___null.10000___1, c___material.7___1, 
+vertebrates___155
+/features: a___null.10000___1, c___bodypart.9___1, 
+null___10000
+/features: a___energy source.15___637, a___making cider.132___1, a___hold.9___1, a___weapon.178___1, a___secure.20___1, a___poke.17___1, a___cover.19___1, a___sewing.70___1, a___measuring flow rate or exerting suction.117___1, a___writing.121___1, a___drawing.122___1, a___decorative.104___1, a___pound.5___1, a___entertainment.22___1, a___base-ball.157___1, a___table-tennis.158___1, a___preparation.159___1, a___chopping.160___1, a___pureeing.161___1, a___contain liquid.1___1, a___clean.12___1, a___exercising dominion.164___1, a___scoop.4___1, a___protect.11___1, a___sell.72___1, a___urination.86___1, a___burying the dead.31___1, a___stamping.51___1, a___display.7___1, a___flat surface.36___1, a___dock.85___1, a___store.3___1, a___tourism.105___1, a___representation.50___1, a___walk.29___1, a___valley.138___1, a___area.144___1, a___place.88___1, a___moving.42___1, a___throwing.46___1, a___borrowing by public.182___1, a___borrowing by member of institution.183___1, a___transmitting.35___1, a___control flow direction.109___1, a___images.33___1, a___hurling.47___1, a___warmth.18___1, a___burner.64___1, a___measurement.67___1, a___carry goods.38___1, a___jamming.89___1, a___support.21___1, a___regulator.108___1, a___directions.110___1, a___safety.111___1, a___inhaling.112___1, a___stoppage of the flow.131___1, a___drive.45___1, a___attract attention.147___1, a___rotate.167___1, a___food preserve.168___1, a___cooking.170___1, a___conduct heat.14___1, a___illuminate.6___1, a___calculation.54___1, a___sit.23___1, a___laid over a grave.32___1, a___free to swing.40___1, a___vehicles can use.163___1, a___flowing to lake.165___1, a___visibility.37___1, a___nest.174___1, a___math.113___1, a___measuring.114___1, a___high wind.136___1, a___study.141___1, a___transporting.116___1, a___washed.84___1, a___refuse.41___1, a___convey.123___1, a___coating.126___1, a___worn.81___1, a___drop.140___1, a___lubricant.169___1, a___contain solid.2___1, a___uniform.82___1, a___eat.74___1, a___infectious particle which cause scrapie and other degenerative disease.99___1, a___digestive organ.129___1, a___reproductive organs.130___1, a___underground-storage-organ.156___1, a___stand.181___1, a___rollable.25___1, a___carrying.44___1, a___fishing.43___1, a___carry people.39___1, a___fly.139___1, a___music.78___1, a___illustrating.49___1, a___cage bird.125___1, a___carrying of people or things.34___1, a___aerating.171___1, a___space_difference.151___1, a___mislead.79___1, a___travel.142___1, a___stimulate.143___1, a___provide.172___1, a___scanning.179___1, a___copying.180___1, a___eliciting.59___1, a___fixing.75___1, a___control.77___1, a___framing focusing the picture.90___1, a___not likely to cause offence.128___1, a___disaster.135___1, a___piercing.137___1, a___gives smoke.63___1, a___bomb.145___1, a___wipe.13___1, a___birth.71___1, a___wandering.103___1, a___discovering.127___1, a___heal.175___1, a___to investigate crimes.176___1, a___ to solve crimes.177___1, a___country.76___1, c___food.0___18, c___tool.1___58, c___place.2___63, c___device.3___49, c___structure.4___43, c___plant.5___2, c___term.6___13, c___material.7___94, c___garment.8___70, c___bodypart.9___26, c___vehicle.10___9, c___furniture.11___1, c___instrument.12___26, c___animal.13___12, c___insect.14___2, c___property.15___11, c___action.16___93, c___object.17___107, c___title.18___57, c___consumable.19___1, c___propernoun.20___7, 

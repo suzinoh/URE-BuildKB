@@ -78,3 +78,4 @@ dict_list = ["dictionary_1_perf_2022-09-07_temp2022-09-15", "dictionary_2_perf_2
 # combine them into one file instead of separate files
 
 inferrence.create_rule_book()
+inferrence.create_DictLine()

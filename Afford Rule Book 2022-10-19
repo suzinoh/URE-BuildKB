@@ -1,0 +1,108 @@
+contain liquid___1
+/features: c___object.17___2, p___ceramic.35___2, 
+contain solid___2
+/features: c___object.17___2, p___gems.91___1, p___metal.45___1, 
+display___7
+/features: c___object.17___1, p___lens round and rectangular shape.100___1, 
+hold___9
+/features: c___structure.4___8, c___device.3___2, c___object.17___3, p___metal.45___2, p___round.11___2, p___spring-loaded.81___2, p___wood.32___2, p___cylinder.6___2, p___square.88___2, 
+protect___11
+/features: c___material.7___6, c___garment.8___4, p___moulding.151___1, p___glass.33___1, p___steel.37___1, p___leather.43___1, p___white.19___1, p___cleft.130___1, p___centre.79___1, p___cotton.44___1, p___fabric.40___1, 
+clean___12
+/features: c___tool.1___1, p___long.15___1, 
+energy source___15
+/features: c___food.0___12, c___animal.13___2, c___material.7___2, p___yellow.21___1, p___flat.98___1, p___sparse.110___1, p___green.24___1, p___brown.28___1, p___round.11___1, p___convexed.14___1, p___red.22___1, p___lithium.122___1, p___purple.26___1, p___wet.65___1, p___sphere.4___1, 
+poke___17
+/features: c___tool.1___8, p___metal.45___4, p___brass.39___4, 
+warmth___18
+/features: c___garment.8___2, c___device.3___3, p___concrete.82___1, p___wool.68___1, p___chemicals.93___1, p___round.11___1, p___black.20___1, 
+cover___19
+/features: c___garment.8___7, c___material.7___4, p___wool.68___1, p___nylon.70___1, p___cotton.44___1, p___steel.37___1, p___leather.43___1, p___fabric.40___1, p___long.15___1, p___cleft.130___1, p___centre.79___1, 
+secure___20
+/features: c___object.17___1, c___tool.1___3, p___cylinder.6___1, p___silver.127___1, p___brown.28___1, p___metal.45___1, 
+support___21
+/features: c___action.16___1, p___metal.45___1, 
+entertainment___22
+/features: c___material.7___1, c___object.17___2, c___instrument.12___3, c___term.6___6, p___concaved.13___1, p___cardboard.38___1, p___wood.32___1, p___round.11___1, p___metal.45___1, p___heart.114___1, p___diamond.115___1, p___leaf.116___1, p___spades .117___1, p___red.22___1, p___black.20___1, 
+sit___23
+/features: c___furniture.11___2, p___wood.32___1, p___cotton.44___1, 
+walk___29
+/features: c___action.16___1, c___term.6___1, c___place.2___1, p___slope.80___1, p___graph.94___1, p___grey.30___1, 
+carrying of people or things___34
+/features: c___action.16___2, p___water.143___2, 
+transmitting___35
+/features: c___device.3___4, p___concaved.13___1, p___black.20___1, p___cuboid.8___1, p___steel.37___1, 
+flat surface___36
+/features: c___structure.4___2, c___material.7___6, p___hexagon.87___1, p___brown.28___1, p___thin.138___1, p___flat.98___1, p___long.15___1, 
+carry goods___38
+/features: c___action.16___1, c___object.17___1, p___steel.37___1, p___cylinder.6___1, 
+carry people___39
+/features: c___action.16___1, p___steel.37___1, 
+refuse___41
+/features: c___object.17___2, c___insect.14___1, p___paper.36___1, p___light.47___1, p___waste.133___1, 
+moving___42
+/features: c___action.16___1, p___stone.42___1, 
+fishing___43
+/features: c___animal.13___2, c___vehicle.10___2, p___thread.89___1, p___cone.7___1, p___semi-sphere.90___1, p___wood.32___1, 
+drive___45
+/features: c___structure.4___2, c___device.3___3, p___metal.45___1, p___leather.43___1, p___brown.28___1, p___yellow.21___1, 
+throwing___46
+/features: c___device.3___1, p___stone.42___1, 
+hurling___47
+/features: c___device.3___1, p___stone.42___1, 
+illustrating___49
+/features: c___instrument.12___2, p___fluorescent.75___1, p___transparent.76___1, 
+representation___50
+/features: c___term.6___1, c___animal.13___1, p___round.11___1, p___vivid.104___1, 
+gives smoke___63
+/features: c___object.17___3, p___metal.45___1, p___wood.32___1, p___cylinder.6___1, 
+burner___64
+/features: c___device.3___3, p___round.11___1, p___white.19___1, p___glass.33___1, 
+measurement___67
+/features: c___device.3___1, p___horizontal.95___1, 
+sewing___70
+/features: c___tool.1___1, p___polished metal.96___1, 
+eat___74
+/features: c___animal.13___1, c___bodypart.9___2, p___brown.28___1, p___oval.97___1, p___white.19___1, 
+fixing___75
+/features: c___object.17___1, p___wood.32___1, 
+control___77
+/features: c___object.17___1, p___metal.45___1, 
+music___78
+/features: c___instrument.12___17, p___barrel.153___2, p___cylinder.6___2, p___bowl.10___2, p___wood.32___2, p___brass.39___2, p___thick-rod.17___2, 
+worn___81
+/features: c___garment.8___5, c___material.7___4, p___wool.68___1, p___long.15___1, p___cleft.130___1, p___centre.79___1, p___cotton.44___1, p___fabric.40___1, p___round.11___1, p___smooth.63___1, 
+place___88
+/features: c___structure.4___1, p___water.143___1, 
+framing focusing the picture___90
+/features: c___object.17___1, p___lens round and rectangular shape.100___1, 
+decorative___104
+/features: c___property.15___1, c___object.17___5, p___diamond.115___1, p___bulb.120___1, p___rubber.121___1, p___white.19___1, p___red.22___1, p___pink.27___1, 
+regulator___108
+/features: c___device.3___1, p___steel.37___1, 
+measuring___114
+/features: c___instrument.12___4, p___semicircle.112___2, p___flat.98___2, 
+writing___121
+/features: c___tool.1___1, c___instrument.12___1, p___cylinder.6___1, p___stiffer ink.140___1, 
+drawing___122
+/features: c___object.17___1, c___tool.1___1, p___white.19___1, p___cylinder.6___1, 
+convey___123
+/features: c___instrument.12___2, p___narrow bottom.147___1, p___wide top.148___1, 
+cage bird___125
+/features: c___animal.13___1, p___vivid.104___1, 
+making cider___132
+/features: c___food.0___4, p___round.11___1, p___convexed.14___1, p___red.22___1, p___green.24___1, 
+disaster___135
+/features: c___object.17___1, p___white.19___1, 
+piercing___137
+/features: c___object.17___2, p___rubber.121___1, p___metal.45___1, 
+fly___139
+/features: c___vehicle.10___1, p___metal.45___1, 
+underground-storage-organ___156
+/features: c___bodypart.9___1, p___round.11___1, 
+flowing to lake___165
+/features: c___structure.4___1, p___water.143___1, 
+lubricant___169
+/features: c___material.7___1, p___wet.65___1, 
+null___10000
+/features: c___garment.8___30, c___structure.4___36, c___food.0___53, c___instrument.12___70, c___object.17___133, c___property.15___9, c___action.16___8, c___device.3___50, c___term.6___41, c___place.2___12, c___title.18___6, c___animal.13___65, c___vehicle.10___13, c___plant.5___5, c___tool.1___49, c___bodypart.9___16, c___material.7___38, c___furniture.11___4, c___insect.14___14, p___wool.68___4, p___tall.69___4, p___nylon.70___4, p___cotton.44___4, p___seed-studded surface.71___4, p___soft.51___4, p___wheat flour.72___4, p___thin-rod.16___4, p___brass.39___4, p___thick-rod.17___4, p___talc.74___4, p___fluorescent.75___4, p___transparent.76___4, p___small.77___4, p___rectangular.78___4, p___centre.79___4, p___round.11___4, p___slope.80___4, p___spring-loaded.81___4, p___concrete.82___4, p___copper.83___4, p___ship.84___4, p___right angles.85___4, p___tabacco.86___4, p___hexagon.87___4, p___brown.28___4, p___square.88___4, p___wood.32___4, p___thread.89___4, p___cone.7___4, p___semi-sphere.90___4, p___gems.91___4, p___metal.45___4, p___threefold.92___4, p___chemicals.93___4, p___black.20___4, p___graph.94___4, p___horizontal.95___4, p___polished metal.96___4, p___oval.97___4, p___white.19___4, p___flat.98___4, p___triangular.99___4, p___lens round and rectangular shape.100___4, p___thin sheet of transparent flexible material.101___4, p___vivid.104___4, p___straight.105___4, p___eye-like markings.106___4, p___erected.107___4, p___fanned out.108___4, p___sparse.110___4, p___burst open.111___4, p___semicircle.112___4, p___heart.114___4, p___diamond.115___4, p___leaf.116___4, p___spades .117___4, p___red.22___4, p___iron.118___4, p___clay.119___4, p___grey.30___4, p___bulb.120___4, p___rubber.121___4, p___pink.27___4, p___lithium.122___4, p___silver.127___4, p___cleft.130___4, p___waste.133___4, p___tissue.134___4, p___smooth.63___4, p___backswpt horns.135___4, p___heavy.49___4, p___zinc.137___4, p___thin.138___4, p___long.15___4, p___stiffer ink.140___4, p___flat-bottomed.141___4, p___water.143___4, p___hemp.145___4, p___sisal.146___4, p___narrow bottom.147___4, p___wide top.148___4, p___sphere.4___4, p___moulding.151___4, p___curve fin.152___4, p___barrel.153___4, p___cylinder.6___4, p___bowl.10___4, p___upright.154___4, p___vertebrates.155___4, p___blue.23___4, p___green.24___4, p___concaved.13___4, p___fabric.40___4, p___glass.33___4, p___plastic.34___4, p___hollow.9___4, p___convexed.14___4, p___stone.42___4, p___cuboid.8___4, p___steel.37___4, p___leather.43___4, p___clear.25___4, p___paper.36___4, p___solid.1___4, p___yellow.21___4, p___ceramic.35___4, p___cardboard.38___4, p___cube.5___4, p___light.47___4, p___purple.26___4, p___wet.65___4, 
