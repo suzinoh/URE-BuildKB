@@ -36,7 +36,7 @@ has_affordance(yoke, hold, active)
 
 yukon
 %definition: A river of north-western North America, which rises in Yukon Territory, north-western Canada, and flows 3,020 km (1,870 miles) westwards through central Alaska to the Bering Sea.
-is_a(yukon, proper noun).
+is_a(yukon, proper_noun).
 has_affordance(yukon, moving, active)
 
 yurt
@@ -365,11 +365,10 @@ Leggings
 %definition: Tight-fitting stretch trousers, typically worn by women or girls.
 is_a(leggings, garment).
 has_affordance(leggings, worn, active)
-has_properity(leggings, tight, shape).
 
 Leg
 %definition: Each of the limbs on which a person or animal walks and stands.
-is_a(leg, body part).
+is_a(leg, bodypart).
 has_a(leg,person).
 has_a(leg,animal).
 has_affordance(leg, walk, passive)
@@ -414,6 +413,6 @@ Luggage
 %definition: Suitcases or other bags in which to pack personal belongings for travelling.
 is_a(luggage, object).
 is_a(luggage, tool).
-has_affordance(luggage, contain solid, passive)
+has_affordance(luggage, contain_solid, passive)
 has_function(luggage,'pack belonging',active).
 

@@ -173,7 +173,7 @@ treasure
 is_a(treasure, object).
 has_a(treasure,metals).
 has_a(treasure,gems).
-has_affordance(treasure, contain solid, passive)
+has_affordance(treasure, contain_solid, passive)
 has_property(treasure, metal, material)
 has_affordance(treasure,precious).
 
@@ -312,7 +312,7 @@ has_a(incendiary, chemicals).
 has_affordance(incendiary, warmth, passive)
 has_function(incendiary,'gives smoke',active).
 has_property(incendiary, round, shape)
-has_propertyhas_property(incendiary, black, color)
+has_property(incendiary, black, color)
 has_affordance(incendiary,explosive, stable).
 has_affordance(incendiary, heavy, volume).
 
@@ -464,7 +464,7 @@ has_affordance(monkey,ft,size).
 
 Mouth
 %definition: The opening and cavity in the lower part of the human face, surrounded by the lips, through which food is taken in and vocal sounds are emitted.
-is_a(mouth, body part).
+is_a(mouth, bodypart).
 has_a(mouth,tongue).
 has_a(mouth,teeth).
 has_function(mouth,eat,active).
@@ -476,7 +476,7 @@ Mango
 is_a(mango, food).
 has_a(mango,seed).
 has_a(mango, pulp).
-has_affordance(mango, energy source, passive)
+has_affordance(mango, energy_source, passive)
 has_property(mango, yellow, color)
 has_affordance(mango,gm,weight).
 
@@ -641,7 +641,7 @@ jetty
 %definition: A landing stage or small pier at which boats can dock or be moored.
 is_a(jetty,place).
 is_a(jetty,structure).
-has_affordance(jetty, flat surface, passive)
+has_affordance(jetty, flat_surface, passive)
 has_function(jetty,dock,passive).
 has_property(jetty, unlabeled, shape)
 
@@ -670,7 +670,7 @@ jigger
 %definition: A machine or vehicle with a part that rocks or moves to and fro, e.g. a jigsaw.
 is_a(jigger,device).
 is_a(jigger,vehicle).
-has_affordance(jigger, carry goods, active)
+has_affordance(jigger, carry_goods, active)
 has_affordance(jigger, liftable, passive)
 
 jigsaw
@@ -746,7 +746,7 @@ has_affordances(jambeau,shape).
 
 James
 %definition: The name of seven Stuart kings of Scotland.
-is_a( james, proper noun).
+is_a( james, proper_noun).
 has_a(james,noun ).
 
 Jammer
@@ -773,7 +773,7 @@ Jar
 %definition: A wide-mouthed cylindrical container made of glass or pottery and typically having a lid, used especially for storing food.
 is_a(jar,object).
 has_a( jar,lid).
-has_affordance(jar, contain liquid, passive)
+has_affordance(jar, contain_liquid, passive)
 has_affordances( jar,texture).
 
 Javelin
@@ -1028,7 +1028,7 @@ has_function(van, transporting, goods).
 Vegetable
 %definition: A plant or part of a plant used as food, such as a cabbage, potato, turnip, or bean.
 is_a(vegetable, food).
-has_affordance(vegetable, energy source, passive)
+has_affordance(vegetable, energy_source, passive)
 
 Venogram
 %definition: An image produced by venography.
@@ -1068,7 +1068,6 @@ verdigris
 is_a(verdigris,device)
 has_properties(verdigris,bluish-green,color).
 has_a(verdigris,'atmospheric oxidation').
-has_propertyhas_propertyhas_property(verdigris, unlabeled, material)
 
 verge
 %definition: An edge or border.
@@ -1272,7 +1271,7 @@ Pig
 is_a(pig, animal).
 has_a(pig, hair).
 has_a(pig, snout).
-has_affordance(pig, energy source, passive)
+has_affordance(pig, energy_source, passive)
 has_affordance(pig, bristly, texture).
 
 Pouch
@@ -1302,7 +1301,7 @@ Purse
 %definition: A small pouch of leather or plastic used for carrying money, typically by a woman.
 is_a(purse, object).
 has_a(purse, money).
-has_affordance(purse, contain solid, passive)
+has_affordance(purse, contain_solid, passive)
 has_property(purse, leather, material)
 has_property(purse, plastic, material)
 has_affordance(purse, small, size).

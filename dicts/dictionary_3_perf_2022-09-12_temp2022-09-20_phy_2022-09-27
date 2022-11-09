@@ -63,7 +63,7 @@ has_affordance(asylum, granted, state).
 
 Armpit
 %definition: A hollow under the arm at the shoulder.
-is_a(armpit, body part).
+is_a(armpit, body_part).
 has_a(armpit, muscle).
 has_a(armpit, skin).
 has_property(armpit, hollow, shape)
@@ -149,7 +149,7 @@ has_function(anodyne, 'not likely to cause offence',passive).
 
 Abdomen
 %definition: The part of the body of a vertebrate containing the digestive and reproductive organs; the belly.
-is_a(abdomen, body part).
+is_a(abdomen, body_part).
 has_function(abdomen, 'digestive organ',passive).
 has_function(abdomen, 'reproductive organs',passive).
 
@@ -162,7 +162,7 @@ Appetizer
 %definition: A small dish of food or a drink taken before a meal or the main course of a meal to stimulate one's appetite.
 is_a(appetizer, food).
 has_a(appetizer, 'small dish',passive).
-has_affordance(appetizer, energy source, passive)
+has_affordance(appetizer, energy_source, passive)
 
 Astrodome
 %definition: An enclosed stadium with a domed roof.
@@ -191,7 +191,7 @@ is_a(acorn, food).
 has_a(acorn, nut).
 has_a(acorn, seed).
 has_a(acorn, shell).
-has_affordance(acorn, energy source, passive)
+has_affordance(acorn, energy_source, passive)
 has_property(acorn, green, color)
 has_property(acorn, brown, color)
 has_property(acorn, yellow, color)
@@ -206,7 +206,7 @@ has_a(alligator, 'native to the americas and china',passive).
 Apple
 %definition: The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
 is_a(apple, food).
-has_affordance(apple, energy source, passive)
+has_affordance(apple, energy_source, passive)
 has_function(apple, 'making cider', active).
 has_property(apple, round, shape)
 has_property(apple, convexed, shape)
@@ -223,7 +223,7 @@ Airport
 %definition: A complex of runways and buildings for the take-off, landing, and maintenance of civil aircraft, with facilities for passengers.
 has_a(airport, building).
 has_a(airport, runway).
-has_affordance(airport, flat surface, passive)
+has_affordance(airport, flat_surface, passive)
 has_function(airport, landing, aircrafts).
 
 Ambulance
@@ -279,7 +279,7 @@ Battery
 %definition: A container consisting of one or more cells, in which chemical energy is converted into electricity and used as a source of power.
 is_a(battery, material).
 has_a(battery, cell).
-has_affordance(battery, energy source, passive)
+has_affordance(battery, energy_source, passive)
 has_affordance(battery, hard, texture).
 
 Beehive
@@ -328,7 +328,7 @@ is_a(cigarette, object).
 has_a(cigarette, tobacco).
 has_a(cigarette, 'filter tip').
 has_a(cigarette, casing).
-has_affordance(cigarette, gives smoke, active)
+has_affordance(cigarette, gives_smoke, active)
 has_property(cigarette, metal, material)
 has_property(cigarette, wood, material)
 has_property(cigarette, cylinder, shape)
@@ -571,7 +571,7 @@ Glass
 %definition: A hard, brittle substance, typically transparent or translucent, made by fusing sand with soda and lime and cooling rapidly. It is used to make windows, drinking containers, and other articles.
 has_a(glass, 'made by fusion sand with soda and lime and cooling rapidly',passive). 
 has_affordance(glass, visibility, active)
-has_affordance(glass, contain liquid, passive)
+has_affordance(glass, contain_liquid, passive)
 has_function(glass, 'to make other articles', active).
 has_property(glass, glass, material)
 has_property(glass, unlabeled, material)
@@ -750,9 +750,6 @@ has_property(buffalo, heavy, weight)
 Bird
 %definition:  A warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly.
 is_a(bird, animal).
-is_a(bird, animal).
-is_a(bird, animal).
-is_a(bird, animal).
 has_a(bird,	feathers).
 has_a(bird,	wings).
 has_a(bird,	beak).
@@ -778,7 +775,7 @@ has_a(back,surface).
 Butter
 %definition:  A pale yellow edible fatty substance made by churning cream and used as a spread or in cooking.
 is_a(butter, food).
-has_affordance(butter, energy source, passive)
+has_affordance(butter, energy_source, passive)
 has_property(butter, yellow, color)
 has_property(butter, unlabeled, color)
 has_affordance(butter,fatty,texture).
@@ -879,8 +876,7 @@ Board
 %definition: A long, thin, flat piece of wood or other hard material, used for floors or other building purposes.
 is_a(board,material).
 has_a(board,wood).
-has_affordance(board, flat surface, passive)
-has_affordance(board, flat surface, passive)
+has_affordance(board, flat_surface, passive)
 has_property(board, long, shape)
 has_affordance(board,hard,weight).
 
@@ -894,7 +890,7 @@ has_affordance(ballpoint,tiny,volume).
 Beaker
 %definition: A drinking container, typically made of plastic, often with a lid for use by children.
 is_a(beaker, tool).
-has_affordance(beaker, contain liquid, passive)
+has_affordance(beaker, contain_liquid, passive)
 has_a(beaker,plastic).
 has_a(beaker,lid).
 
@@ -906,7 +902,7 @@ has_a(binder,cover).
 
 Bingo
 %definition: A game in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.
-is_a(bingo, proper noun).
+is_a(bingo, proper_noun).
 has_a(bingo, numbers).
 has_affordance(bingo, entertainment, active)
 
@@ -940,7 +936,7 @@ is_a(broccoli, food).
 has_a(broccoli, 'flower buds').
 has_property(broccoli, green, color)
 has_property(broccoli, purple, color)
-has_affordance(broccoli, energy source, passive)
+has_affordance(broccoli, energy_source, passive)
 
 Broom
 %definition: A long-handled brush of bristles or twigs, used for sweeping.
@@ -968,7 +964,7 @@ has_property(butterfly, unlabeled, shape)
 Buttermilk
 %definition: The slightly sour liquid left after butter has been churned, used in baking or consumed as a drink.
 is_a(buttermilk, food).
-has_affordance(buttermilk, energy source, passive)
+has_affordance(buttermilk, energy_source, passive)
 is_a(buttermilk, material).
 
 Backstage
@@ -1043,7 +1039,7 @@ Restaurant
 %definition: A place where people pay to sit and eat meals that are cooked and served on the premises. 
 is_a(restaurant,place). 
 has_affordance(restaurant, sell, active)
-has_affordance(restaurant, energy source, passive)
+has_affordance(restaurant, energy_source, passive)
 
 Road
 %definition: A wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use. 
@@ -1186,7 +1182,7 @@ has_affordance(firecracker, explosive, stable).
 Wheat
 %definition: A cereal which is the most important kind grown in temperate countries, the grain of which is ground to make flour for bread, pasta, pastry, etc.
 is_a(wheat, food).
-has_affordance(wheat, energy source, passive)
+has_affordance(wheat, energy_source, passive)
 
 Window
 %definition: An opening in the wall or roof of a building or vehicle, fitted with glass in a frame to admit light or air and allow people to see out.
@@ -1202,7 +1198,7 @@ is_a(winter, term).
 Wood
 %definition: The hard fibrous material that forms the main substance of the trunk or branches of a tree or shrub, used for fuel or timber.
 is_a(wood, material).
-has_affordance(wood, energy source, passive)
+has_affordance(wood, energy_source, passive)
 
 Ocean
 %definition: A very large expanse of sea, in particular each of the main areas. into which the sea is divided geographicaly
@@ -1218,7 +1214,7 @@ Oil
 %definition: A viscous liquid derived from petroleum, especially for use as a fuel or lubricant.
 is_a(oil, material).
 has_a(oil,petroleum).
-has_affordance(oil, energy source, passive)
+has_affordance(oil, energy_source, passive)
 has_function(oil,lubricant,active).
 has_property(oil, wet, texture)
 
@@ -1234,7 +1230,7 @@ has_property(orange, yellow, color)
 Onion
 %definition: A swollen edible bulb used as a vegetable, having a pungent taste and smell and composed of several concentric layers.
 is_a(onion, food).
-has_affordance(onion, energy source, passive)
+has_affordance(onion, energy_source, passive)
 has_property(onion, sphere, shape)
 has_a(onion,'concentric layers').
 
@@ -1242,7 +1238,7 @@ Oven
 %definition: An enclosed compartment, usually part of a cooker, for cooking and heating food.
 is_a(oven, device).
 has_function(oven,cooking,active).
-has_affordance(oven, conduct heat, passive)
+has_affordance(oven, conduct_heat, passive)
 has_a(oven,cooker).
 
 Owl

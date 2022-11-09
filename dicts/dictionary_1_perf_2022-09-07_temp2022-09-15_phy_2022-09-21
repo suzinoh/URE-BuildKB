@@ -4,7 +4,7 @@ is_a(surgeon, title).
 
 Scale
 %definition: Each of the small, thin horny or bony plates protecting the skin of fish and reptiles, typically overlapping one another. 
-is_a(scale,body part).
+is_a(scale,bodypart).
 is_a(scale, instrument).
 has_affordance(scale, protect, passive)
 
@@ -22,8 +22,8 @@ supercharger
 %definition: A device that increases the pressure of the fuelâ€“air mixture in an internal combustion engine, fitted in order to achieve greater efficiency.
 is_a(supercharger, device).
 has_a(supercharger, fuel).
-has_a(supercharger, 'combustion engine',passive).
-has_affordance(supercharger, energy source, passive)
+has_a(supercharger, 'combustion_engine',passive).
+has_affordance(supercharger, energy_source, passive)
 has_function(supercharger, achieve, active).
 
 supercomputer
@@ -257,7 +257,7 @@ is_a(sandwich,food).
 has_a(sandwich,bread).
 has_a(sandwich,'chopped vegetables',passive).
 has_a(sandwich,meat).
-has_function(sandwich, energy source,passive).
+has_function(sandwich, energy_source,passive).
 
 Strawberry
 %definition: A sweet soft red fruit with a seed-studded surface.
@@ -325,7 +325,7 @@ has_a(seashell, 'marine mollusc').
 See-saw
 %definition: A long plank balanced in the middle on a fixed support, on each end of which children sit and swing up and down by pushing the ground alternately with their feet.
 is_a(see-saw, structure).
-has_a(seesaw, 'fixed support'passive).
+has_a(seesaw, 'fixed support', passive).
 has_affordance(see-saw, entertainment, active)
 has_affordance(see-saw, sit, passive)
 has_affordance(seesaw, long, size).
@@ -340,7 +340,7 @@ has_affordance(soapberry, crushable, hardness).
 Soapbox
 %definition: A box or crate used as a makeshift stand by a public speaker. 
 is_a(soapbox, object).
-has_affordance(soapbox, contain solid, passive)
+has_affordance(soapbox, contain_solid, passive)
 
 Soapfish
 %definition: A stout-bodied fish of tropical seas which produces large amounts of toxic mucus from the skin, giving it a soapy feel when handled.
@@ -401,11 +401,11 @@ hamper
 is_a(hamper, object).
 has_a(hamper,handle).
 has_a(hamper,'hinged lid').
-has_affordance(hamper, contain solid, passive)
+has_affordance(hamper, contain_solid, passive)
 
 hand
 %definition: The end part of a person's arm beyond the wrist, including the palm, fingers, and thumb.
-is_a(hand, body part).
+is_a(hand, bodypart).
 has_a(hand,palm).
 has_a(hand,fingers).
 has_a(hand,thumb).
@@ -413,7 +413,7 @@ has_a(hand,thumb).
 handbag
 %definition: A small bag used by a woman to carry everyday personal items.
 is_a(handbag, garment).
-has_affordance(handbag, contain solid, passive)
+has_affordance(handbag, contain_solid, passive)
 has_property(handbag, unlabeled, shape)
 handball
 %definition: A game similar to fives, in which the ball is hit with the hand in a walled court.
@@ -904,7 +904,7 @@ Carton
 %definition: A small, light box or container in which drinks or foodstuffs are packaged.
 is_a(carton, material).
 is_a(carton, object).
-has_affordance(carton, contain liquid, passive)
+has_affordance(carton, contain_liquid, passive)
 has_affordance(carton,small,volume).
 has_affordance(carton,light,weight).
 
@@ -1145,7 +1145,7 @@ is_a(tocsin, term).
 
 toe
 %definition: Any of the five digits at the end of the human foot.
-is_a(toe, body part).
+is_a(toe, bodypart).
 
 toecap
 %definition: A piece of steel or leather constituting or fitted over the front part of a boot or shoe as protection or reinforcement.
